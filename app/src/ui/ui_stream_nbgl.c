@@ -23,6 +23,14 @@
 #include "globals.h"
 #include "ui_stream.h"
 
+#if defined(TARGET_NANOX) || defined(TARGET_NANOS2)
+#define ICON_APP_WARNING C_icon_warning
+#elif defined(TARGET_STAX) || defined(TARGET_FLEX)
+#define ICON_APP_WARNING C_Important_Circle_64px
+#elif defined(TARGET_APEX)
+#define ICON_APP_WARNING C_Important_Circle_48px
+#endif
+
 #define G_stream global.ui.stream
 
 bool tz_ui_nav_cb(void);
@@ -118,7 +126,7 @@ switch_to_blindsigning_on_error(void)
             ERROR_CODE_SIZE);
 
     // Show error msg and ask user to proceed to blindsign
-    nbgl_useCaseChoice(&C_Important_Circle_64px,
+    nbgl_useCaseChoice(&ICON_APP_WARNING,
                        "The transaction cannot be decoded", blindsign_msg,
                        "Reject transaction", "Proceed to Blindsign",
                        blindsign_choice);
@@ -130,7 +138,7 @@ expert_mode_splash(void)
 {
     TZ_PREAMBLE(("void"));
 
-    nbgl_useCaseReviewStart(&C_Important_Circle_64px, "Expert mode",
+    nbgl_useCaseReviewStart(&ICON_APP_WARNING, "Expert mode",
                             "Next screen requires careful review",
                             "Reject transaction", tz_ui_stream_start,
                             tz_reject_ui);
@@ -160,7 +168,7 @@ tz_enable_expert_mode_ui(void)
 {
     FUNC_LEAVE();
 
-    nbgl_useCaseChoice(&C_Important_Circle_64px,
+    nbgl_useCaseChoice(&ICON_APP_WARNING,
                        "Enable expert mode to authorize this "
                        "transaction",
                        "", "Enable expert mode", "Reject transaction",
