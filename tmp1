@@ -1,0 +1,48 @@
+/TimeoutError: Timeout waiting for screen change
+reveal.py:            test_operation_field[public_key-tz4]
+reveal.py:            test_operation_field[public_key-long-hash]
+set_consensus_key.py: test_operation_field[pk-long-hash]
+set_consensus_key.py: test_operation_field[pk-tz4]
+
+
+
+
+
+
+
+test_basic.py
+test_wrong_instructions.py
+test_wrong_index.py
+test_wrong_derivation_type.py
+test_wrong_derivation_path.py
+test_wrong_class.py
+test_wrong_apdu_length.py
+test_version.py
+test_unimplemented_commands.py
+test_sign_transfer_without_hash.py
+test_sign_transfer.py
+test_sign_micheline.py
+test_sign_execute_outbox_messages.py
+test_sign_complex_operation.py
+test_reject_transfer.py
+test_reject_review_operation.py
+test_provide_pk_reject.py
+test_provide_pk.py
+test_parsing_errors.py
+test_mixing_command.py
+test_git.py
+test_get_pk.py
+test_expert_mode_rejections.py
+test_blindsign_valid.py
+test_blindsign_too_large.py
+test_blindsign_too_deep_rejections.py
+test_blindsign_too_deep.py
+test_blindsign_different_modes.py
+
+
+X expert-mode on review (expert-mode rejection, already ? + reject when enable * 2 (at / when))
+X reject during review (see all ways)
+X blind-rejection (see all ways)
+
+++ remove stax test ( change stax test in Makefile )
+++ move /nano/ -> . ( change log folder ...)

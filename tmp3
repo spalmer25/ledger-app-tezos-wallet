@@ -1,0 +1,260 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.3, pluggy-1.5.0 -- /home/palmer/functori/ledger/ledger-app-tezos-wallet/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/palmer/functori/ledger/ledger-app-tezos-wallet
+plugins: mypy-plugins-3.1.2, xdist-3.6.1, anyio-4.4.0
+collecting ... collected 474 items / 473 deselected / 1 selected
+
+tests/integration/nano/test_sign/test_blindsign.py::test_reject_too_long_operation_with_too_large_at_blindsigning [2025-01-20 14:04:34,830][INFO] ragger.logger - Speculos binary: 'app/build/stax/bin/app.elf'
+[2025-01-20 14:04:34,830][INFO] ragger.logger - Speculos options: '--api-port 5000 --apdu-port 0 --seed zebra zebra zebra zebra zebra zebra zebra zebra zebra zebra zebra zebra zebra zebra zebra zebra zebra zebra zebra zebra zebra zebra zebra zebra --model stax'
+[2025-01-20 14:04:34,830][INFO] ragger.logger - Starting SpeculosTezosBackend stream
+14:04:35.031:root: Parsing binary '/home/palmer/functori/ledger/ledger-app-tezos-wallet/app/build/stax/bin/app.elf'
+14:04:35.031:speculos: Api level detected from metadata: 22
+14:04:35.032:root: Parsing binary '/home/palmer/functori/ledger/ledger-app-tezos-wallet/app/build/stax/bin/app.elf'
+[*] speculos launcher revision: 
+[*] using API_LEVEL version 22 on stax
+[*] loading CXLIB from "/home/palmer/functori/ledger/ledger-app-tezos-wallet/.venv/lib/python3.12/site-packages/speculos/cxlib/stax-api-level-cx-22.elf"
+[*] patching svc instruction at 0x81effc
+[*] Seed initialized from environment
+ * Serving Flask app 'speculos.api.api'
+ * Debug mode: off
+14:04:35.101:werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.25:5000
+14:04:35.101:werkzeug: [33mPress CTRL+C to quit[0m
+14:04:35.136:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "GET /events?stream=true HTTP/1.1" 200 -
+14:04:35.140:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "GET /events?currentscreenonly=true HTTP/1.1" 200 -
+[*] Env app name: 'Tezos Wallet'
+[*] Env app version: '3.0.6'
+[*] loading fonts from "/home/palmer/functori/ledger/ledger-app-tezos-wallet/.venv/lib/python3.12/site-packages/speculos/fonts/stax-fonts-22.bin" (36864)
+[*] loaded fonts at 0x805000
+[*] patching svc instruction at 0x40014a28
+[*] patching svc instruction at 0x40014a38
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:35.243:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "GET /events?currentscreenonly=true HTTP/1.1" 200 -
+14:04:35.346:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "GET /events?currentscreenonly=true HTTP/1.1" 200 -
+14:04:35.383:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "GET /screenshot HTTP/1.1" 200 -
+14:04:35.475:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:35.581:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "POST /ticker/ HTTP/1.1" 200 -
+14:04:35.604:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "POST /finger HTTP/1.1" 200 -
+syscall 0x0000008b not handled
+14:04:35.607:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "GET /screenshot HTTP/1.1" 200 -
+syscall 0x01fa000d not handled
+14:04:35.624:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:35.649:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "POST /ticker/ HTTP/1.1" 200 -
+14:04:35.672:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "GET /screenshot HTTP/1.1" 200 -
+14:04:35.678:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:35.680:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "POST /ticker/ HTTP/1.1" 200 -
+14:04:35.681:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:35.783:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "POST /ticker/ HTTP/1.1" 200 -
+14:04:35.792:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "POST /finger HTTP/1.1" 200 -
+14:04:35.803:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "GET /screenshot HTTP/1.1" 200 -
+14:04:35.819:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:35.828:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "POST /ticker/ HTTP/1.1" 200 -
+14:04:35.862:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "GET /screenshot HTTP/1.1" 200 -
+14:04:35.884:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "POST /finger HTTP/1.1" 200 -
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:35.888:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "GET /screenshot HTTP/1.1" 200 -
+14:04:35.901:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:35.975:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "POST /ticker/ HTTP/1.1" 200 -
+14:04:35.998:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:35] "GET /screenshot HTTP/1.1" 200 -
+14:04:36.006:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:36.010:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "POST /ticker/ HTTP/1.1" 200 -
+14:04:36.012:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:36.117:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "POST /ticker/ HTTP/1.1" 200 -
+14:04:36.127:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "POST /finger HTTP/1.1" 200 -
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:36.139:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "GET /screenshot HTTP/1.1" 200 -
+14:04:36.153:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:36.206:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "POST /ticker/ HTTP/1.1" 200 -
+14:04:36.232:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "GET /screenshot HTTP/1.1" 200 -
+14:04:36.241:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:36.244:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "POST /ticker/ HTTP/1.1" 200 -
+14:04:36.247:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:36.351:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "POST /ticker/ HTTP/1.1" 200 -
+14:04:36.368:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "POST /finger HTTP/1.1" 200 -
+14:04:36.409:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "GET /screenshot HTTP/1.1" 200 -
+14:04:36.428:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "POST /finger HTTP/1.1" 200 -
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:36.437:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "GET /screenshot HTTP/1.1" 200 -
+14:04:36.452:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:36.502:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "POST /ticker/ HTTP/1.1" 200 -
+14:04:36.528:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "GET /screenshot HTTP/1.1" 200 -
+14:04:36.535:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:36.538:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "POST /ticker/ HTTP/1.1" 200 -
+[2025-01-20 14:04:36,545][INFO] ragger.apdu_logger - => 8004000011048000002c800006c18000000080000000
+14:04:36.547:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:36.548:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "POST /apdu HTTP/1.1" 200 -
+syscall 0x0000009e not handled
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+[2025-01-20 14:04:36,594][INFO] ragger.apdu_logger - <= 9000
+[2025-01-20 14:04:36,594][INFO] ragger.apdu_logger - => 800401ffeb030000000000000000000000000000000000000000000000000000000000000000c900ffdd6102321bc251e4a5190ad5b12b251069d9b48092f4010b01060000017c000000086d65737361676530000000086d65737361676531000000086d65737361676532000000086d65737361676533000000086d65737361676534000000086d65737361676535000000086d65737361676536000000086d65737361676537000000086d65737361676538000000086d65737361676539000000096d6573736167653130000000096d6573736167653131000000096d6573736167653132000000096d6573736167
+14:04:36.598:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "POST /apdu HTTP/1.1" 200 -
+syscall 0x0000009e not handled
+14:04:36.651:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "POST /ticker/ HTTP/1.1" 200 -
+14:04:36.679:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "GET /screenshot HTTP/1.1" 200 -
+14:04:36.688:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "GET /screenshot HTTP/1.1" 200 -
+[2025-01-20 14:04:36,689][INFO] ragger.logger - Saving screenshot to image '/home/palmer/functori/ledger/ledger-app-tezos-wallet/tests/integration/nano/snapshots-tmp/stax/test_sign/test_blindsign/test_reject_too_long_operation_with_too_large_at_blindsigning/clear_n_too_large_warning/00000.png'
+14:04:36.704:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "GET /events?currentscreenonly=true HTTP/1.1" 200 -
+14:04:36.719:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "POST /finger HTTP/1.1" 200 -
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:36.728:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "GET /screenshot HTTP/1.1" 200 -
+14:04:36.742:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:36.816:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "POST /ticker/ HTTP/1.1" 200 -
+14:04:36.864:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "GET /screenshot HTTP/1.1" 200 -
+14:04:36.874:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "GET /screenshot HTTP/1.1" 200 -
+[2025-01-20 14:04:36,875][INFO] ragger.logger - Saving screenshot to image '/home/palmer/functori/ledger/ledger-app-tezos-wallet/tests/integration/nano/snapshots-tmp/stax/test_sign/test_blindsign/test_reject_too_long_operation_with_too_large_at_blindsigning/clear_n_too_large_warning/00001.png'
+14:04:36.891:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "GET /events?currentscreenonly=true HTTP/1.1" 200 -
+14:04:36.900:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "POST /finger HTTP/1.1" 200 -
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:36.907:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "GET /screenshot HTTP/1.1" 200 -
+14:04:36.931:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:36] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:37.024:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "POST /ticker/ HTTP/1.1" 200 -
+14:04:37.066:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /screenshot HTTP/1.1" 200 -
+14:04:37.076:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /screenshot HTTP/1.1" 200 -
+[2025-01-20 14:04:37,077][INFO] ragger.logger - Saving screenshot to image '/home/palmer/functori/ledger/ledger-app-tezos-wallet/tests/integration/nano/snapshots-tmp/stax/test_sign/test_blindsign/test_reject_too_long_operation_with_too_large_at_blindsigning/clear_n_too_large_warning/00002.png'
+14:04:37.095:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /events?currentscreenonly=true HTTP/1.1" 200 -
+14:04:37.103:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "POST /finger HTTP/1.1" 200 -
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:37.119:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /screenshot HTTP/1.1" 200 -
+14:04:37.132:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:37.238:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "POST /ticker/ HTTP/1.1" 200 -
+14:04:37.283:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /screenshot HTTP/1.1" 200 -
+14:04:37.293:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /screenshot HTTP/1.1" 200 -
+[2025-01-20 14:04:37,294][INFO] ragger.logger - Saving screenshot to image '/home/palmer/functori/ledger/ledger-app-tezos-wallet/tests/integration/nano/snapshots-tmp/stax/test_sign/test_blindsign/test_reject_too_long_operation_with_too_large_at_blindsigning/clear_n_too_large_warning/00003.png'
+14:04:37.312:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /events?currentscreenonly=true HTTP/1.1" 200 -
+14:04:37.327:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "POST /finger HTTP/1.1" 200 -
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:37.342:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /screenshot HTTP/1.1" 200 -
+14:04:37.365:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:37.435:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "POST /ticker/ HTTP/1.1" 200 -
+14:04:37.467:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /screenshot HTTP/1.1" 200 -
+14:04:37.472:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /screenshot HTTP/1.1" 200 -
+[2025-01-20 14:04:37,473][INFO] ragger.logger - Saving screenshot to image '/home/palmer/functori/ledger/ledger-app-tezos-wallet/tests/integration/nano/snapshots-tmp/stax/test_sign/test_blindsign/test_reject_too_long_operation_with_too_large_at_blindsigning/clear_n_too_large_warning/00004.png'
+14:04:37.488:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /events?currentscreenonly=true HTTP/1.1" 200 -
+14:04:37.500:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "POST /finger HTTP/1.1" 200 -
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:37.508:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /screenshot HTTP/1.1" 200 -
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+[2025-01-20 14:04:37,516][INFO] ragger.apdu_logger - <= 9000
+[2025-01-20 14:04:37,516][INFO] ragger.apdu_logger - => 800401ffeb653133000000096d6573736167653134000000096d6573736167653135000000096d6573736167653136000000096d6573736167653137000000096d6573736167653138000000096d6573736167653139000000096d6573736167653230000000096d6573736167653231000000096d6573736167653232000000096d6573736167653233000000096d6573736167653234000000096d6573736167653235000000096d6573736167653236000000096d6573736167653237000000096d6573736167653238000000096d65737361676532396f00ffdd6102321bc251e4a5190ad5b12b251069d9b4c096
+14:04:37.520:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:37.522:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "POST /apdu HTTP/1.1" 200 -
+syscall 0x0000009e not handled
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:37.664:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "POST /ticker/ HTTP/1.1" 200 -
+14:04:37.699:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /screenshot HTTP/1.1" 200 -
+14:04:37.704:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /screenshot HTTP/1.1" 200 -
+[2025-01-20 14:04:37,704][INFO] ragger.logger - Saving screenshot to image '/home/palmer/functori/ledger/ledger-app-tezos-wallet/tests/integration/nano/snapshots-tmp/stax/test_sign/test_blindsign/test_reject_too_long_operation_with_too_large_at_blindsigning/clear_n_too_large_warning/00005.png'
+14:04:37.715:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /events?currentscreenonly=true HTTP/1.1" 200 -
+14:04:37.728:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "POST /finger HTTP/1.1" 200 -
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:37.735:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /screenshot HTTP/1.1" 200 -
+14:04:37.744:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:37.798:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "POST /ticker/ HTTP/1.1" 200 -
+14:04:37.838:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /screenshot HTTP/1.1" 200 -
+14:04:37.847:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /screenshot HTTP/1.1" 200 -
+[2025-01-20 14:04:37,848][INFO] ragger.logger - Saving screenshot to image '/home/palmer/functori/ledger/ledger-app-tezos-wallet/tests/integration/nano/snapshots-tmp/stax/test_sign/test_blindsign/test_reject_too_long_operation_with_too_large_at_blindsigning/clear_n_too_large_warning/00006.png'
+14:04:37.865:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /events?currentscreenonly=true HTTP/1.1" 200 -
+14:04:37.881:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "POST /finger HTTP/1.1" 200 -
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:37.891:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "GET /screenshot HTTP/1.1" 200 -
+14:04:37.918:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:37] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:38.011:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "POST /ticker/ HTTP/1.1" 200 -
+14:04:38.054:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /screenshot HTTP/1.1" 200 -
+14:04:38.062:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /screenshot HTTP/1.1" 200 -
+[2025-01-20 14:04:38,063][INFO] ragger.logger - Saving screenshot to image '/home/palmer/functori/ledger/ledger-app-tezos-wallet/tests/integration/nano/snapshots-tmp/stax/test_sign/test_blindsign/test_reject_too_long_operation_with_too_large_at_blindsigning/clear_n_too_large_warning/00007.png'
+14:04:38.081:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /events?currentscreenonly=true HTTP/1.1" 200 -
+14:04:38.091:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "POST /finger HTTP/1.1" 200 -
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:38.114:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /screenshot HTTP/1.1" 200 -
+14:04:38.124:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:38.215:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "POST /ticker/ HTTP/1.1" 200 -
+14:04:38.256:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /screenshot HTTP/1.1" 200 -
+14:04:38.264:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /screenshot HTTP/1.1" 200 -
+[2025-01-20 14:04:38,265][INFO] ragger.logger - Saving screenshot to image '/home/palmer/functori/ledger/ledger-app-tezos-wallet/tests/integration/nano/snapshots-tmp/stax/test_sign/test_blindsign/test_reject_too_long_operation_with_too_large_at_blindsigning/clear_n_too_large_warning/00008.png'
+14:04:38.282:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /events?currentscreenonly=true HTTP/1.1" 200 -
+14:04:38.303:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "POST /finger HTTP/1.1" 200 -
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:38.325:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /screenshot HTTP/1.1" 200 -
+14:04:38.345:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:38.363:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "POST /ticker/ HTTP/1.1" 200 -
+14:04:38.388:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /screenshot HTTP/1.1" 200 -
+14:04:38.395:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /screenshot HTTP/1.1" 200 -
+[2025-01-20 14:04:38,395][INFO] ragger.logger - Saving screenshot to image '/home/palmer/functori/ledger/ledger-app-tezos-wallet/tests/integration/nano/snapshots-tmp/stax/test_sign/test_blindsign/test_reject_too_long_operation_with_too_large_at_blindsigning/clear_n_too_large_warning/00009.png'
+14:04:38.405:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /events?currentscreenonly=true HTTP/1.1" 200 -
+14:04:38.413:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "POST /finger HTTP/1.1" 200 -
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:38.426:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /screenshot HTTP/1.1" 200 -
+14:04:38.434:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:38.488:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "POST /ticker/ HTTP/1.1" 200 -
+14:04:38.523:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /screenshot HTTP/1.1" 200 -
+14:04:38.528:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /screenshot HTTP/1.1" 200 -
+[2025-01-20 14:04:38,529][INFO] ragger.logger - Saving screenshot to image '/home/palmer/functori/ledger/ledger-app-tezos-wallet/tests/integration/nano/snapshots-tmp/stax/test_sign/test_blindsign/test_reject_too_long_operation_with_too_large_at_blindsigning/clear_n_too_large_warning/00010.png'
+14:04:38.542:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /events?currentscreenonly=true HTTP/1.1" 200 -
+14:04:38.554:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "POST /finger HTTP/1.1" 200 -
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:38.569:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /screenshot HTTP/1.1" 200 -
+14:04:38.578:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+14:04:38.587:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "POST /ticker/ HTTP/1.1" 200 -
+14:04:38.608:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /screenshot HTTP/1.1" 200 -
+14:04:38.614:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /screenshot HTTP/1.1" 200 -
+[2025-01-20 14:04:38,614][INFO] ragger.logger - Saving screenshot to image '/home/palmer/functori/ledger/ledger-app-tezos-wallet/tests/integration/nano/snapshots-tmp/stax/test_sign/test_blindsign/test_reject_too_long_operation_with_too_large_at_blindsigning/clear_n_too_large_warning/00011.png'
+14:04:38.625:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /events?currentscreenonly=true HTTP/1.1" 200 -
+14:04:38.632:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "POST /finger HTTP/1.1" 200 -
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:38.636:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /screenshot HTTP/1.1" 200 -
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:38.645:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "[32mPOST /ticker HTTP/1.1[0m" 308 -
+[2025-01-20 14:04:38,645][INFO] ragger.apdu_logger - <= 9000
+[2025-01-20 14:04:38,645][INFO] ragger.apdu_logger - => 800481ff2fb1020c0103000000260080808080808080808080808080808080808080808080808080808080808080808080808020
+14:04:38.653:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "POST /apdu HTTP/1.1" 200 -
+syscall 0x0000009e not handled
+syscall 0x0000008b not handled
+syscall 0x01fa000d not handled
+14:04:38.760:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "POST /ticker/ HTTP/1.1" 200 -
+14:04:38.789:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /screenshot HTTP/1.1" 200 -
+14:04:38.795:werkzeug: 127.0.0.1 - - [20/Jan/2025 14:04:38] "GET /screenshot HTTP/1.1" 200 -
+[2025-01-20 14:04:38,795][INFO] ragger.logger - Saving screenshot to image '/home/palmer/functori/ledger/ledger-app-tezos-wallet/tests/integration/nano/snapshots-tmp/stax/test_sign/test_blindsign/test_reject_too_long_operation_with_too_large_at_blindsigning/clear_n_too_large_warning/00012.png'
+FAILED
+
+=========================== short test summary info ============================
+FAILED tests/integration/nano/test_sign/test_blindsign.py::test_reject_too_long_operation_with_too_large_at_blindsigning
+====================== 1 failed, 473 deselected in 6.20s =======================

@@ -1,0 +1,364 @@
+⬇ retrieved bls12-381.22.1  (https://gitlab.com/tezos/tezos/-/archive/octez-v22.1/octez-source-22.1.tar.gz)
+
+
+apdu.ml          : Tezos_crypto.Signature.(secret_key, public_key_hash, public_key, secret_key, Secret_key, Public_key)
+gen_integration.m: open Tezos_protocol_022_PsRiotum
+gen_integration.m: open Tezos_micheline
+gen_integration.m:   let open Protocol.Alpha_context in
+gen_micheline.ml : open Tezos_protocol_022_PsRiotum
+gen_micheline.ml : open Tezos_micheline
+gen_micheline.ml : open Tezos_benchmarks_proto_022_PsRiotum
+gen_operations.ml: open Tezos_protocol_022_PsRiotum
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Tezos_crypto.Hashed in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_operations.ml:   let open Protocol.Alpha_context in
+gen_operations.ml:   let open QCheck2.Gen in
+gen_utils.ml     : open Tezos_protocol_022_PsRiotum
+gen_utils.ml     : open Tezos_micheline
+gen_utils.ml     :   let open Protocol.Alpha_context in
+generate.ml      :       let fp_hex = open_out @@ Format.sprintf "%s/nano/samples.hex" dir in
+generate.ml      :             let fp = open_out (Format.asprintf "%s/nano/test_%03d.sh" dir i) in
+generate.ml      :       let fp_hex = open_out @@ Format.sprintf "%s/nano/samples.hex" dir in
+generate.ml      :             let fp = open_out (Format.asprintf "%s/nano/test_%03d.sh" dir i) in
+
+test_c_parser.ml           : open Tezos_protocol_022_PsRiotum
+test_c_parser.ml           : open Test_c_parser_utils
+test_micheline_c_parser.ml : open Tezos_protocol_022_PsRiotum
+test_micheline_c_parser.ml : open Tezos_micheline
+test_micheline_c_parser.ml : open Test_c_parser_utils
+test_operations_c_parser.ml: open Tezos_protocol_022_PsRiotum
+test_operations_c_parser.ml: open Test_c_parser_utils
+test_operations_c_parser.ml:   let open Protocol.Alpha_context in
+
+
+
+
+
+
+
+The following actions will be performed:
+  ∗ install conf-libev                       4-12     [required by lwt]
+  ∗ install conf-cmake                       1        [required by hacl-star-raw]
+  ∗ install conf-gmp                         5        [required by secp256k1-internal]
+  ∗ install tezos-sapling-parameters         1.1.0    [required by octez-libs]
+  ∗ install ocamlbuild                       0.16.1   [required by ptime, logs]
+  ∗ install conf-rust                        0.1      [required by octez-libs]
+  ∗ install cmdliner                         1.3.0    [required by logs, crunch]
+  ∗ install conf-pkg-config                  4        [required by ctypes-foreign]
+  ∗ install conf-g++                         1.0      [required by class_group_vdf]
+  ∗ install conf-autoconf                    0.2      [required by stdcompat]
+  ∗ install seq                              base     [required by re, psq]
+  ∗ install ocamlfind                        1.9.8    [required by ptime, logs]
+  ∗ install atomic                           base     [required by opentelemetry]
+  ∗ install dune                             3.19.0   [required by octez-protocol-022-PsRiotum-libs, terminal_size]
+  ∗ install conf-which                       1        [required by hacl-star-raw]
+  ∗ install conf-gmp-powm-sec                4        [required by mirage-crypto-pk]
+  ∗ install uchar                            0.0.2    [required by stdcompat]
+  ∗ install conf-zlib                        1        [required by camlzip]
+  ∗ install conf-sqlite3                     1        [required by sqlite3]
+  ∗ install conf-libffi                      2.0.0    [required by ctypes-foreign]
+  ∗ install zarith                           1.13     [required by octez-libs]
+  ∗ install topkg                            1.0.8    [required by ptime, logs]
+  ∗ install pringo                           1.3      [required by tezos-benchmark]
+  ∗ install base-bytes                       base     [required by ocplib-endian]
+  ∗ install vector                           1.0.0    [required by progress]
+  ∗ install thread-local-storage             0.2      [required by opentelemetry]
+  ∗ install terminal_size                    0.2.0
+  ∗ install stringext                        1.6.0    [required by cohttp]
+  ∗ install stdlib-shims                     0.3.0    [required by alcotest]
+  ∗ install stdint                           0.7.2    [required by octez-libs]
+  ∗ install sexplib0                         v0.17.0  [required by conduit-lwt, cohttp, ezjsonm]
+  ∗ install seqes                            0.4      [required by octez-libs]
+  ∗ install semaphore-compat                 1.0.2    [required by octez-libs]
+  ∗ install rusage                           1.0.0    [required by octez-libs]
+  ∗ install ringo                            1.1.0    [required by octez-libs, octez-shell-libs]
+  ∗ install re                               1.12.0   [required by octez-l2-libs]
+  ∗ install qcheck-core                      0.25     [required by octez-libs]
+  ∗ install pure-splitmix                    0.3      [required by octez-libs]
+  ∗ install psq                              0.2.1    [required by lru]
+  ∗ install ppx_derivers                     1.2.1    [required by ppxlib]
+  ∗ install pprint                           20230830 [required by ocp-ocamlres]
+  ∗ install pp                               2.0.0    [required by dune-private-libs]
+  ∗ install ordering                         3.19.0   [required by dyn, stdune]
+  ∗ install optint                           0.3.0    [required by octez-libs]
+  ∗ install ohex                             0.2.0    [required by tls]
+  ∗ install octez-rustzcash-deps             22.1     [required by tezos-protocol-022-PsRiotum]
+  ∗ install octez-rust-deps                  22.1     [required by octez-l2-libs]
+  ∗ install octez-riscv-api                  22.1     [required by octez-riscv-pvm]
+  ∗ install octez-protocol-compiler-compat   22.1     [required by octez-protocol-compiler]
+  ∗ install octez-distributed-internal       22.1     [required by octez-distributed-lwt-internal]
+  ∗ install ocamlgraph                       2.2.0    [required by octez-libs]
+  ∗ install ocaml-syntax-shims               1.0.0    [required by alcotest]
+  ∗ install ocaml-compiler-libs              v0.17.0  [required by ppxlib]
+  ∗ install ocaml_intrinsics_kernel          v0.17.1  [required by base]
+  ∗ install magic-mime                       1.3.1    [required by octez-libs]
+  ∗ install macaddr                          5.6.0    [required by ipaddr]
+  ∗ install lwt-dllist                       1.1.0    [required by caqti]
+  ∗ install jane-street-headers              v0.17.0  [required by time_now]
+  ∗ install hashcons                         1.4.0    [required by tezos-benchmark]
+  ∗ install gmap                             0.3.0    [required by x509]
+  ∗ install eqaf                             0.10     [required by octez-libs]
+  ∗ install either                           1.0.0    [required by repr]
+  ∗ install duration                         0.2.1    [required by mirage-crypto-rng]
+  ∗ install domain-name                      0.4.1    [required by caqti, caqti-lwt]
+  ∗ install csexp                            1.5.2    [required by dune-configurator]
+  ∗ install cppo                             1.8.0    [required by lwt]
+  ∗ install clap                             0.3.0    [required by tezt]
+  ∗ install camlp-streams                    5.0.1    [required by octez-libs]
+  ∗ install bigarray-compat                  1.1.0    [required by octez-libs]
+  ∗ install bheap                            2.0.0    [required by octez-libs]
+  ∗ install base64                           3.5.1    [required by cohttp]
+  ∗ install stdcompat                        20.1     [required by pyml]
+  ∗ install camlzip                          1.12     [required by octez-l2-libs]
+  ∗ install prbnmcn-basic-structures         0.0.1    [required by prbnmcn-linalg, prbnmcn-stats]
+  ∗ install uutf                             1.0.4    [required by octez-libs]
+  ∗ install uucp                             16.0.0   [required by progress]
+  ∗ install rresult                          0.7.0    [required by bos]
+  ∗ install ptime                            1.2.0    [required by lwt-exit]
+  ∗ install mtime                            2.1.0    [required by caqti, caqti-lwt]
+  ∗ install hmap                             0.8.1    [required by opentelemetry]
+  ∗ install fmt                              0.10.0   [required by logs]
+  ∗ install astring                          0.8.5    [required by octez-libs]
+  ∗ install asetmap                          0.8.1    [required by octez-libs]
+  ∗ install bigstring                        0.3      [required by secp256k1-internal]
+  ∗ install pbrt                             3.1.1    [required by opentelemetry]
+  ∗ install integers                         0.7.0    [required by octez-libs]
+  ∗ install aches                            1.1.0    [required by octez-libs, octez-shell-libs]
+  ∗ install lru                              0.3.1    [required by octez-libs]
+  ∗ install dyn                              3.19.0   [required by dune-private-libs]
+  ∗ install ppxlib                           0.35.0   [required by ppx_import]
+  ∗ install digestif                         1.3.0    [required by octez-libs, tls]
+  ∗ install ipaddr                           5.6.0    [required by caqti, caqti-lwt]
+  ∗ install dune-configurator                3.19.0   [required by ctypes-foreign, lwt, yaml]
+  ∗ install stdlib-random                    1.2.0    [required by class_group_vdf]
+  ∗ install ocplib-endian                    1.2      [required by lwt]
+  ∗ install pyml                             20231101 [required by tezos-benchmark]
+  ∗ install prbnmcn-stats                    0.0.6    [required by tezos-benchmark]
+  ∗ install prbnmcn-linalg                   0.0.1    [required by tezos-benchmark]
+  ∗ install jsonm                            1.0.2    [required by octez-libs]
+  ∗ install terminal                         0.4.0    [required by octez-libs]
+  ∗ install crunch                           4.0.0    [required by octez-l2-libs]
+  ∗ install asn1-combinators                 0.3.2    [required by x509]
+  ∗ install ambient-context                  0.1.0    [required by ambient-context-lwt]
+  ∗ install cstruct                          6.2.0    [required by tar, secp256k1-internal, tar-unix]
+  ∗ install ocp-ocamlres                     0.4      [required by octez-protocol-compiler]
+  ∗ install fpath                            0.7.3    [required by ca-certs]
+  ∗ install alcotest                         1.9.0    [required by octez-libs]
+  ∗ install stdune                           3.19.0   [required by dune-private-libs]
+  ∗ install ppxlib_jane                      v0.17.0  [required by ppx_sexp_conv]
+  ∗ install ppx_import                       1.11.0   [required by octez-l2-libs]
+  ∗ install ppx_deriving                     6.0.3    [required by octez-l2-libs]
+  ∗ install sqlite3                          5.3.1    [required by caqti-driver-sqlite3]
+  ∗ install mirage-crypto                    2.0.1    [required by tls]
+  ∗ install ctypes                           0.23.0   [required by octez-l2-libs]
+  ∗ install checkseum                        0.5.2    [required by octez-libs]
+  ∗ install bigstringaf                      0.10.0   [required by caqti]
+  ∗ install base                             v0.17.2  [required by ppx_expect]
+  ∗ install class_group_vdf                  0.0.5    [required by octez-proto-libs]
+  ∗ install lwt                              5.8.1    [required by lwt-exit, lwt-canceler, octez-l2-libs]
+  ∗ install repr                             0.7.0    [required by octez-libs]
+  ∗ install secp256k1-internal               0.4.0    [required by octez-libs]
+  ∗ install hex                              1.5.0    [required by tezt-tezos]
+  ∗ install qcheck-alcotest                  0.25     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install dune-private-libs                3.19.0   [required by dune-site]
+  ∗ install kdf                              1.0.0    [required by tls]
+  ∗ install hacl-star-raw                    0.7.2    [required by octez-libs]
+  ∗ install ctypes-foreign                   0.23.0   [required by octez-l2-libs]
+  ∗ install decompress                       1.5.3    [required by tar]
+  ∗ install angstrom                         0.16.1   [required by caqti]
+  ∗ install stdio                            v0.17.0  [required by ppx_expect]
+  ∗ install ppx_sexp_conv                    v0.17.0  [required by octez-libs]
+  ∗ install ppx_here                         v0.17.0  [required by ppx_expect]
+  ∗ install ppx_globalize                    v0.17.0  [required by ppx_base]
+  ∗ install ppx_enumerate                    v0.17.0  [required by ppx_base]
+  ∗ install ppx_compare                      v0.17.0  [required by ppx_base]
+  ∗ install ppx_cold                         v0.17.0  [required by ppx_base]
+  ∗ install opentelemetry                    0.11.2   [required by octez-libs]
+  ∗ install lwt-watcher                      0.2      [required by octez-shell-libs]
+  ∗ install lwt-exit                         1.0      [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install lwt-canceler                     0.3      [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install lwt_ppx                          5.9.1    [required by octez-libs]
+  ∗ install logs                             0.7.0    [required by octez-injector]
+  ∗ install cstruct-lwt                      6.2.0    [required by tar-unix]
+  ∗ install ambient-context-lwt              0.1.0    [required by octez-libs]
+  ∗ install aches-lwt                        1.1.0    [required by octez-l2-libs]
+  ∗ install ppx_repr                         0.7.0    [required by octez-libs]
+  ∗ install ezjsonm                          1.3.0    [required by octez-libs]
+  ∗ install bls12-381                        22.1     [required by octez-l2-libs, tezos-protocol-022-PsRiotum]
+  ∗ install dune-site                        3.19.0   [required by caqti]
+  ∗ install hacl-star                        0.7.2    [required by octez-libs]
+  ∗ install tar                              2.6.0    [required by octez-l2-libs]
+  ∗ install uri                              4.4.0    [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install ppx_optcomp                      v0.17.0  [required by time_now]
+  ∗ install ipaddr-sexp                      5.6.0    [required by conduit-lwt-unix]
+  ∗ install ppx_hash                         v0.17.0  [required by octez-libs]
+  ∗ install ppx_assert                       v0.17.0  [required by jst-config]
+  ∗ install progress                         0.4.0    [required by octez-libs]
+  ∗ install octez-distributed-lwt-internal   22.1     [required by octez-libs]
+  ∗ install mirage-crypto-rng                2.0.1    [required by tls]
+  ∗ install bos                              0.2.1    [required by yaml]
+  ∗ install alcotest-lwt                     1.9.0    [required by octez-libs]
+  ∗ install tezt                             4.2.0    [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install tar-unix                         2.6.0    [required by octez-l2-libs]
+  ∗ install uri-sexp                         4.4.0    [required by cohttp]
+  ∗ install conduit                          8.0.0    [required by conduit-lwt]
+  ∗ install ppx_base                         v0.17.0  [required by time_now]
+  ∗ install jst-config                       v0.17.0  [required by time_now]
+  ∗ install index                            1.6.2    [required by octez-l2-libs]
+  ∗ install mirage-crypto-pk                 2.0.1    [required by tls]
+  ∗ install mirage-crypto-ec                 2.0.1    [required by tls]
+  ∗ install yaml                             3.2.0    [required by octez-l2-libs]
+  ∗ install octez-alcotezt                   22.1     [required by octez-l2-libs]
+  ∗ install cohttp                           5.3.1    [required by octez-libs]
+  ∗ install conduit-lwt                      8.0.0    [required by octez-libs]
+  ∗ install time_now                         v0.17.0  [required by ppx_inline_test]
+  ∗ install x509                             1.0.6    [required by caqti]
+  ∗ install octez-internal-libs              22.1     [required by octez-l2-libs]
+  ∗ install ppx_inline_test                  v0.17.0  [required by ppx_expect]
+  ∗ install tls                              2.0.1    [required by caqti]
+  ∗ install ca-certs                         1.0.1    [required by conduit-lwt-unix]
+  ∗ install ppx_expect                       v0.17.2  [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install caqti                            2.1.2    [required by octez-l2-libs]
+  ∗ install conduit-lwt-unix                 8.0.0    [required by octez-libs]
+  ∗ install caqti-lwt                        2.1.1    [required by octez-l2-libs]
+  ∗ install caqti-driver-sqlite3             2.1.1    [required by octez-l2-libs]
+  ∗ install octez-libs                       22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install tezt-tezos                       22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install tezos-dal-node-services          22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install tezos-benchmark                  22.1     [required by octez-shell-libs]
+  ∗ install octez-version                    22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install octez-riscv-pvm                  22.1     [required by octez-l2-libs]
+  ∗ install octez-proto-libs                 22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install octez-performance-metrics        22.1     [required by octez-l2-libs]
+  ∗ install dal_node_migrations              22.1     [required by tezos-dal-node-lib]
+  ∗ install octez-protocol-compiler          22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install octez-l2-libs                    22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install octez-shell-libs                 22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install tezos-protocol-022-PsRiotum      22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install tezos-dal-node-lib               22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install octez-node-config                22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install octez-crawler                    22.1     [required by octez-injector]
+  ∗ install octez-injector                   22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install octez-protocol-022-PsRiotum-libs 22.1
+
+
+
+
+The following actions will be performed:
+  ∗ install octez-rustzcash-deps             22.1     [required by tezos-protocol-022-PsRiotum]
+  ∗ install octez-rust-deps                  22.1     [required by octez-l2-libs]
+  ∗ install secp256k1-internal               0.4.0    [required by octez-libs]
+  ∗ install bls12-381                        22.1     [required by octez-l2-libs, tezos-protocol-022-PsRiotum]
+  ∗ install dune-site                        3.19.0   [required by caqti]
+  ∗ install hacl-star                        0.7.2    [required by octez-libs]
+  ∗ install tar                              2.6.0    [required by octez-l2-libs]
+  ∗ install uri                              4.4.0    [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install ppx_optcomp                      v0.17.0  [required by time_now]
+  ∗ install ipaddr-sexp                      5.6.0    [required by conduit-lwt-unix]
+  ∗ install ppx_hash                         v0.17.0  [required by octez-libs]
+  ∗ install ppx_assert                       v0.17.0  [required by jst-config]
+  ∗ install progress                         0.4.0    [required by octez-libs]
+  ∗ install octez-distributed-lwt-internal   22.1     [required by octez-libs]
+  ∗ install mirage-crypto-rng                2.0.1    [required by tls]
+  ∗ install bos                              0.2.1    [required by yaml]
+  ∗ install alcotest-lwt                     1.9.0    [required by octez-libs]
+  ∗ install tezt                             4.2.0    [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install tar-unix                         2.6.0    [required by octez-l2-libs]
+  ∗ install uri-sexp                         4.4.0    [required by cohttp]
+  ∗ install conduit                          8.0.0    [required by conduit-lwt]
+  ∗ install ppx_base                         v0.17.0  [required by time_now]
+  ∗ install jst-config                       v0.17.0  [required by time_now]
+  ∗ install index                            1.6.2    [required by octez-l2-libs]
+  ∗ install mirage-crypto-pk                 2.0.1    [required by tls]
+  ∗ install mirage-crypto-ec                 2.0.1    [required by tls]
+  ∗ install yaml                             3.2.0    [required by octez-l2-libs]
+  ∗ install octez-alcotezt                   22.1     [required by octez-l2-libs]
+  ∗ install cohttp                           5.3.1    [required by octez-libs]
+  ∗ install conduit-lwt                      8.0.0    [required by octez-libs]
+  ∗ install time_now                         v0.17.0  [required by ppx_inline_test]
+  ∗ install x509                             1.0.6    [required by caqti]
+  ∗ install octez-internal-libs              22.1     [required by octez-l2-libs]
+  ∗ install ppx_inline_test                  v0.17.0  [required by ppx_expect]
+  ∗ install tls                              2.0.1    [required by caqti]
+  ∗ install ca-certs                         1.0.1    [required by conduit-lwt-unix]
+  ∗ install ppx_expect                       v0.17.2  [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install caqti                            2.1.2    [required by octez-l2-libs]
+  ∗ install conduit-lwt-unix                 8.0.0    [required by octez-libs]
+  ∗ install caqti-lwt                        2.1.1    [required by octez-l2-libs]
+  ∗ install caqti-driver-sqlite3             2.1.1    [required by octez-l2-libs]
+  ∗ install octez-libs                       22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install tezt-tezos                       22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install tezos-dal-node-services          22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install tezos-benchmark                  22.1     [required by octez-shell-libs]
+  ∗ install octez-version                    22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install octez-riscv-pvm                  22.1     [required by octez-l2-libs]
+  ∗ install octez-proto-libs                 22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install octez-performance-metrics        22.1     [required by octez-l2-libs]
+  ∗ install dal_node_migrations              22.1     [required by tezos-dal-node-lib]
+  ∗ install octez-protocol-compiler          22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install octez-l2-libs                    22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install octez-shell-libs                 22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install tezos-protocol-022-PsRiotum      22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install tezos-dal-node-lib               22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install octez-node-config                22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install octez-crawler                    22.1     [required by octez-injector]
+  ∗ install octez-injector                   22.1     [required by octez-protocol-022-PsRiotum-libs]
+  ∗ install octez-protocol-022-PsRiotum-libs 22.1
+
+(
+rm -rf _opam
+opam switch -y create . 5.2.1
+eval $(opam env)
+opam remote add octez-22.1 https://github.com/tezos/opam-repository.git\#octez-22.1
+eval $(opam env)
+opam update octez-22.1
+eval $(opam env)
+opam install -y octez-shell-libs.22.1 tezos-protocol-022-PsRiotum.22.1
+) > tmp-res-loc4

@@ -1,0 +1,1388 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.ocaml
+#1 transferring dockerfile: 1.95kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/ocaml/opam:alpine-3.21-ocaml-5.2
+#2 DONE 0.4s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/2] FROM docker.io/ocaml/opam:alpine-3.21-ocaml-5.2@sha256:64469b941f1c8d5f029ec91703dfd232bbdd660626e717556338cb90398bb3cf
+#4 resolve docker.io/ocaml/opam:alpine-3.21-ocaml-5.2@sha256:64469b941f1c8d5f029ec91703dfd232bbdd660626e717556338cb90398bb3cf 0.0s done
+#4 CACHED
+
+#5 [2/2] RUN    sudo cp /usr/bin/opam-2.1 /usr/bin/opam;                                                opam remote add opam https://opam.ocaml.org;                                            RUSTUP_TOOLCHAIN=1.77.2;                                                                OCTEZ_VERSION=22.0;                                                                     OCTEZ_REPO=https://gitlab.com/tezos/tezos.git;                                          OCTEZ_COMMIT=`git ls-remote $OCTEZ_REPO octez-v$OCTEZ_VERSION | cut -f 1`;              OCTEZ_URL=$OCTEZ_REPO#$OCTEZ_COMMIT;                                                    wget https://sh.rustup.rs/rustup-init.sh;                                               chmod +x rustup-init.sh;                                                                ./rustup-init.sh --profile minimal --default-toolchain $RUSTUP_TOOLCHAIN -y;            source "$HOME/.cargo/env";                                                              opam remote add octez-22.0 https://github.com/tezos/opam-repository.git#octez-22.0;        opam update;        opam install -y            opentelemetry.0.10            octez-protocol-022-PsRiotum-libs.$OCTEZ_VERSION            terminal_size;        opam pin -y tezos-micheline-rewriting.$OCTEZ_VERSION                    $OCTEZ_URL;        opam pin -y tezos-benchmark-type-inference-022-PsRiotum.$OCTEZ_VERSION  $OCTEZ_URL;        opam pin -y tezos-benchmark-022-PsRiotum.$OCTEZ_VERSION                 $OCTEZ_URL;        opam pin -y tezos-benchmarks-proto-022-PsRiotum.$OCTEZ_VERSION          $OCTEZ_URL;        rm -rf opam-repository .opam/download-cache .opam/repo               .opam/5.2/.opam-switch/build .opam/5.2/.opam-switch/sources;
+#5 9.291 [opam] Initialised
+#5 14.97 [NOTE] Repository opam has been added to the selections of switch 5.2 only.
+#5 14.97        Run `opam repository add opam --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+#5 14.97 
+#5 16.11 Connecting to sh.rustup.rs (13.32.145.78:443)
+#5 16.16 saving to 'rustup-init.sh'
+#5 16.16 rustup-init.sh       100% |********************************| 28075  0:00:00 ETA
+#5 16.16 'rustup-init.sh' saved
+#5 16.18 info: downloading installer
+#5 17.47 info: profile set to 'minimal'
+#5 17.47 info: default host triple is x86_64-unknown-linux-musl
+#5 17.47 info: syncing channel updates for '1.77.2-x86_64-unknown-linux-musl'
+#5 17.71 info: latest update on 2024-04-09, rust version 1.77.2 (25ef9e3d8 2024-04-09)
+#5 17.71 info: downloading component 'cargo'
+#5 18.18 info: downloading component 'rust-std'
+#5 20.27 info: downloading component 'rustc'
+#5 22.61 info: installing component 'cargo'
+#5 23.27 info: installing component 'rust-std'
+#5 25.56 info: installing component 'rustc'
+#5 30.57 info: default toolchain set to '1.77.2-x86_64-unknown-linux-musl'
+#5 30.57 
+#5 30.58   1.77.2-x86_64-unknown-linux-musl installed - rustc 1.77.2 (25ef9e3d8 2024-04-09)
+#5 30.58 
+#5 30.58 
+#5 30.58 Rust is installed now. Great!
+#5 30.58 
+#5 30.58 To get started you may need to restart your current shell.
+#5 30.58 This would reload your PATH environment variable to include
+#5 30.58 Cargo's bin directory ($HOME/.cargo/bin).
+#5 30.58 
+#5 30.58 To configure your current shell, you need to source
+#5 30.58 the corresponding env file under $HOME/.cargo.
+#5 30.58 
+#5 30.58 This is usually done by running one of the following (note the leading DOT):
+#5 30.58 . "$HOME/.cargo/env"            # For sh/bash/zsh/ash/dash/pdksh
+#5 30.58 source "$HOME/.cargo/env.fish"  # For fish
+#5 30.58 source $"($nu.home-path)/.cargo/env.nu"  # For nushell
+#5 60.27 [octez-22.0] Initialised
+#5 71.45 [NOTE] Repository octez-22.0 has been added to the selections of switch 5.2 only.
+#5 71.45        Run `opam repository add octez-22.0 --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+#5 71.45 
+#5 71.52 This development version of opam requires an update to the layout of /home/opam/.opam from version 2.0 to version 2.1, which can't be reverted.
+#5 71.52 You may want to back it up before going further.
+#5 71.52 
+#5 71.52 Continue? [Y/n] y
+#5 71.52 Format upgrade done.
+#5 72.45 
+#5 72.45 <><> Updating package repositories ><><><><><><><><><><><><><><><><><><><><><><>
+#5 77.01 [octez-22.0] no changes from git+https://github.com/tezos/opam-repository.git#octez-22.0
+#5 78.41 [opam] no changes from https://opam.ocaml.org
+#5 200.0 [default] Initialised
+#5 218.5 The following actions will be performed:
+#5 218.5   - install conf-libev                       4-12     [required by lwt]
+#5 218.5   - install conf-cmake                       1        [required by hacl-star-raw]
+#5 218.5   - install conf-gmp                         5        [required by secp256k1-internal]
+#5 218.5   - install tezos-sapling-parameters         1.1.0    [required by octez-libs]
+#5 218.5   - install ocamlbuild                       0.16.1   [required by ptime, logs]
+#5 218.5   - install conf-rust                        0.1      [required by octez-libs]
+#5 218.5   - install cmdliner                         1.3.0    [required by logs, crunch]
+#5 218.5   - install dune                             3.18.2   [required by opentelemetry, octez-protocol-022-PsRiotum-libs, terminal_size]
+#5 218.5   - install conf-pkg-config                  4        [required by ctypes-foreign]
+#5 218.5   - install conf-g++                         1.0      [required by class_group_vdf]
+#5 218.5   - install conf-autoconf                    0.2      [required by stdcompat]
+#5 218.5   - install seq                              base     [required by re, psq]
+#5 218.5   - install ocamlfind                        1.9.8    [required by ptime, logs]
+#5 218.5   - install conf-which                       1        [required by hacl-star-raw]
+#5 218.5   - install conf-gmp-powm-sec                4        [required by mirage-crypto-pk]
+#5 218.5   - install vector                           1.0.0    [required by progress]
+#5 218.5   - install terminal_size                    0.2.0
+#5 218.5   - install stringext                        1.6.0    [required by cohttp]
+#5 218.5   - install stdlib-shims                     0.3.0    [required by pbrt]
+#5 218.5   - install stdint                           0.7.2    [required by octez-libs]
+#5 218.5   - install sexplib0                         v0.17.0  [required by conduit-lwt, cohttp, ezjsonm]
+#5 218.5   - install seqes                            0.4      [required by octez-libs]
+#5 218.5   - install semaphore-compat                 1.0.2    [required by octez-libs]
+#5 218.5   - install rusage                           1.0.0    [required by octez-libs]
+#5 218.5   - install ringo                            1.1.0    [required by octez-libs, octez-shell-libs]
+#5 218.5   - install qcheck-core                      0.25     [required by octez-libs]
+#5 218.5   - install pure-splitmix                    0.3      [required by octez-libs]
+#5 218.5   - install ppx_derivers                     1.2.1    [required by ppxlib]
+#5 218.5   - install pprint                           20230830 [required by ocp-ocamlres]
+#5 218.5   - install pp                               2.0.0    [required by dune-private-libs]
+#5 218.5   - install ordering                         3.18.2   [required by dyn, stdune]
+#5 218.5   - install optint                           0.3.0    [required by octez-libs]
+#5 218.5   - install ohex                             0.2.0    [required by tls]
+#5 218.5   - install octez-rustzcash-deps             22.0     [required by tezos-protocol-022-PsRiotum]
+#5 218.5   - install octez-rust-deps                  22.0     [required by octez-l2-libs]
+#5 218.5   - install octez-riscv-api                  22.0     [required by octez-riscv-pvm]
+#5 218.5   - install octez-protocol-compiler-compat   22.0     [required by octez-protocol-compiler]
+#5 218.5   - install octez-distributed-internal       22.0     [required by octez-distributed-lwt-internal]
+#5 218.5   - install ocamlgraph                       2.2.0    [required by octez-libs]
+#5 218.5   - install ocaml-syntax-shims               1.0.0    [required by alcotest]
+#5 218.5   - install ocaml-compiler-libs              v0.17.0  [required by ppxlib]
+#5 218.5   - install ocaml_intrinsics_kernel          v0.17.1  [required by base]
+#5 218.5   - install magic-mime                       1.3.1    [required by octez-libs]
+#5 218.5   - install macaddr                          5.6.0    [required by ipaddr]
+#5 218.5   - install lwt-dllist                       1.1.0    [required by caqti]
+#5 218.5   - install jane-street-headers              v0.17.0  [required by time_now]
+#5 218.5   - install hashcons                         1.4.0    [required by tezos-benchmark]
+#5 218.5   - install gmap                             0.3.0    [required by x509]
+#5 218.5   - install eqaf                             0.10     [required by octez-libs]
+#5 218.5   - install either                           1.0.0    [required by repr]
+#5 218.5   - install duration                         0.2.1    [required by mirage-crypto-rng]
+#5 218.5   - install domain-name                      0.4.1    [required by caqti, caqti-lwt]
+#5 218.5   - install csexp                            1.5.2    [required by dune-configurator]
+#5 218.5   - install cppo                             1.8.0    [required by lwt]
+#5 218.5   - install clap                             0.3.0    [required by tezt]
+#5 218.5   - install camlp-streams                    5.0.1    [required by octez-libs]
+#5 218.5   - install bigarray-compat                  1.1.0    [required by octez-libs]
+#5 218.5   - install bheap                            2.0.0    [required by octez-libs]
+#5 218.5   - install base64                           3.5.1    [required by cohttp]
+#5 218.5   - install conf-zlib                        1        [required by camlzip]
+#5 218.5   - install conf-sqlite3                     1        [required by sqlite3]
+#5 218.5   - install conf-libffi                      2.0.0    [required by ctypes-foreign]
+#5 218.5   - install re                               1.12.0   [required by octez-l2-libs]
+#5 218.5   - install psq                              0.2.1    [required by lru]
+#5 218.5   - install zarith                           1.13     [required by octez-libs]
+#5 218.5   - install topkg                            1.0.8    [required by ptime, logs]
+#5 218.5   - install stdcompat                        20.1     [required by pyml]
+#5 218.5   - install pringo                           1.3      [required by tezos-benchmark]
+#5 218.5   - install base-bytes                       base     [required by ocplib-endian]
+#5 218.5   - install pbrt                             3.1.1    [required by opentelemetry]
+#5 218.5   - install integers                         0.7.0    [required by octez-libs]
+#5 218.5   - install aches                            1.1.0    [required by octez-libs, octez-shell-libs]
+#5 218.5   - install dyn                              3.18.2   [required by dune-private-libs]
+#5 218.5   - install ppxlib                           0.35.0   [required by ppx_import]
+#5 218.5   - install digestif                         1.3.0    [required by octez-libs, tls]
+#5 218.5   - install ipaddr                           5.6.0    [required by caqti, caqti-lwt]
+#5 218.5   - install dune-configurator                3.18.2   [required by ctypes-foreign, lwt, yaml]
+#5 218.5   - install stdlib-random                    1.2.0    [required by class_group_vdf]
+#5 218.5   - install camlzip                          1.12     [required by octez-l2-libs]
+#5 218.5   - install lru                              0.3.1    [required by caqti]
+#5 218.5   - install prbnmcn-basic-structures         0.0.1    [required by prbnmcn-linalg, prbnmcn-stats]
+#5 218.5   - install uutf                             1.0.4    [required by octez-libs]
+#5 218.5   - install uucp                             16.0.0   [required by progress]
+#5 218.5   - install rresult                          0.7.0    [required by bos]
+#5 218.5   - install ptime                            1.2.0    [required by opentelemetry]
+#5 218.5   - install mtime                            2.1.0    [required by caqti, caqti-lwt]
+#5 218.5   - install hmap                             0.8.1    [required by opentelemetry]
+#5 218.5   - install fmt                              0.10.0   [required by logs]
+#5 218.5   - install astring                          0.8.5    [required by octez-libs]
+#5 218.5   - install asetmap                          0.8.1    [required by octez-libs]
+#5 218.5   - install pyml                             20231101 [required by tezos-benchmark]
+#5 218.5   - install ocplib-endian                    1.2      [required by lwt]
+#5 218.5   - install bigstring                        0.3      [required by secp256k1-internal]
+#5 218.5   - install stdune                           3.18.2   [required by dune-private-libs]
+#5 218.5   - install ppxlib_jane                      v0.17.0  [required by ppx_sexp_conv]
+#5 218.5   - install ppx_import                       1.11.0   [required by octez-l2-libs]
+#5 218.5   - install ppx_deriving                     6.0.3    [required by octez-l2-libs]
+#5 218.5   - install sqlite3                          5.3.1    [required by caqti-driver-sqlite3]
+#5 218.5   - install mirage-crypto                    2.0.0    [required by tls]
+#5 218.5   - install ctypes                           0.23.0   [required by octez-l2-libs]
+#5 218.5   - install checkseum                        0.5.2    [required by octez-libs]
+#5 218.5   - install bigstringaf                      0.10.0   [required by caqti]
+#5 218.5   - install base                             v0.17.2  [required by ppx_expect]
+#5 218.5   - install class_group_vdf                  0.0.5    [required by octez-proto-libs]
+#5 218.5   - install prbnmcn-stats                    0.0.6    [required by tezos-benchmark]
+#5 218.5   - install prbnmcn-linalg                   0.0.1    [required by tezos-benchmark]
+#5 218.5   - install jsonm                            1.0.2    [required by octez-libs]
+#5 218.5   - install terminal                         0.4.0    [required by octez-libs]
+#5 218.5   - install crunch                           4.0.0    [required by octez-l2-libs]
+#5 218.5   - install asn1-combinators                 0.3.2    [required by x509]
+#5 218.5   - install ambient-context                  0.1.0    [required by opentelemetry]
+#5 218.5   - install cstruct                          6.2.0    [required by tar, secp256k1-internal, tar-unix]
+#5 218.5   - install ocp-ocamlres                     0.4      [required by octez-protocol-compiler]
+#5 218.5   - install fpath                            0.7.3    [required by ca-certs]
+#5 218.5   - install alcotest                         1.9.0    [required by octez-libs]
+#5 218.5   - install lwt                              5.8.1    [required by lwt-exit, lwt-canceler, octez-l2-libs]
+#5 218.5   - install dune-private-libs                3.18.2   [required by dune-site]
+#5 218.5   - install kdf                              1.0.0    [required by tls]
+#5 218.5   - install hacl-star-raw                    0.7.2    [required by octez-libs]
+#5 218.5   - install ctypes-foreign                   0.23.0   [required by octez-l2-libs]
+#5 218.5   - install decompress                       1.5.3    [required by tar]
+#5 218.5   - install angstrom                         0.16.1   [required by caqti]
+#5 218.5   - install stdio                            v0.17.0  [required by ppx_expect]
+#5 218.5   - install ppx_sexp_conv                    v0.17.0  [required by octez-libs]
+#5 218.5   - install ppx_here                         v0.17.0  [required by ppx_expect]
+#5 218.5   - install ppx_globalize                    v0.17.0  [required by ppx_base]
+#5 218.5   - install ppx_enumerate                    v0.17.0  [required by ppx_base]
+#5 218.5   - install ppx_compare                      v0.17.0  [required by ppx_base]
+#5 218.5   - install ppx_cold                         v0.17.0  [required by ppx_base]
+#5 218.5   - install repr                             0.7.0    [required by octez-libs]
+#5 218.5   - install opentelemetry                    0.10
+#5 218.5   - install secp256k1-internal               0.4.0    [required by octez-libs]
+#5 218.5   - install hex                              1.5.0    [required by tezt-tezos]
+#5 218.5   - install qcheck-alcotest                  0.25     [required by octez-protocol-022-PsRiotum-libs]
+#5 218.5   - install lwt-watcher                      0.2      [required by octez-shell-libs]
+#5 218.5   - install lwt-exit                         1.0      [required by octez-protocol-022-PsRiotum-libs]
+#5 218.5   - install lwt-canceler                     0.3      [required by octez-protocol-022-PsRiotum-libs]
+#5 218.5   - install lwt_ppx                          5.9.1    [required by octez-libs]
+#5 218.5   - install logs                             0.7.0    [required by octez-injector]
+#5 218.5   - install cstruct-lwt                      6.2.0    [required by tar-unix]
+#5 218.5   - install ambient-context-lwt              0.1.0    [required by octez-libs]
+#5 218.5   - install aches-lwt                        1.1.0    [required by octez-l2-libs]
+#5 218.5   - install dune-site                        3.18.2   [required by caqti]
+#5 218.5   - install hacl-star                        0.7.2    [required by octez-libs]
+#5 218.5   - install tar                              2.6.0    [required by octez-l2-libs]
+#5 218.5   - install uri                              4.4.0    [required by octez-protocol-022-PsRiotum-libs]
+#5 218.5   - install ppx_optcomp                      v0.17.0  [required by time_now]
+#5 218.5   - install ipaddr-sexp                      5.6.0    [required by conduit-lwt-unix]
+#5 218.5   - install ppx_hash                         v0.17.0  [required by octez-libs]
+#5 218.5   - install ppx_assert                       v0.17.0  [required by jst-config]
+#5 218.5   - install ppx_repr                         0.7.0    [required by octez-libs]
+#5 218.5   - install ezjsonm                          1.3.0    [required by octez-libs]
+#5 218.5   - install bls12-381                        22.0     [required by octez-l2-libs, tezos-protocol-022-PsRiotum]
+#5 218.5   - install progress                         0.4.0    [required by octez-libs]
+#5 218.5   - install octez-distributed-lwt-internal   22.0     [required by octez-libs]
+#5 218.5   - install mirage-crypto-rng                2.0.0    [required by tls]
+#5 218.5   - install bos                              0.2.1    [required by yaml]
+#5 218.5   - install alcotest-lwt                     1.9.0    [required by octez-libs]
+#5 218.5   - install tar-unix                         2.6.0    [required by octez-l2-libs]
+#5 218.5   - install uri-sexp                         4.4.0    [required by cohttp]
+#5 218.5   - install conduit                          8.0.0    [required by conduit-lwt]
+#5 218.5   - install ppx_base                         v0.17.0  [required by time_now]
+#5 218.5   - install jst-config                       v0.17.0  [required by time_now]
+#5 218.5   - install tezt                             4.2.0    [required by octez-protocol-022-PsRiotum-libs]
+#5 218.5   - install index                            1.6.2    [required by octez-l2-libs]
+#5 218.5   - install mirage-crypto-pk                 2.0.0    [required by tls]
+#5 218.5   - install mirage-crypto-ec                 2.0.0    [required by tls]
+#5 218.5   - install yaml                             3.2.0    [required by octez-l2-libs]
+#5 218.5   - install cohttp                           5.3.1    [required by octez-libs]
+#5 218.5   - install conduit-lwt                      8.0.0    [required by octez-libs]
+#5 218.5   - install time_now                         v0.17.0  [required by ppx_inline_test]
+#5 218.5   - install octez-alcotezt                   22.0     [required by octez-l2-libs]
+#5 218.5   - install x509                             1.0.6    [required by caqti]
+#5 218.5   - install ppx_inline_test                  v0.17.0  [required by ppx_expect]
+#5 218.5   - install octez-internal-libs              22.0     [required by octez-l2-libs]
+#5 218.5   - install tls                              2.0.1    [required by caqti]
+#5 218.5   - install ca-certs                         1.0.1    [required by conduit-lwt-unix]
+#5 218.5   - install ppx_expect                       v0.17.2  [required by octez-protocol-022-PsRiotum-libs]
+#5 218.5   - install caqti                            2.2.4    [required by octez-l2-libs]
+#5 218.5   - install conduit-lwt-unix                 8.0.0    [required by octez-libs]
+#5 218.5   - install caqti-lwt                        2.2.4    [required by octez-l2-libs]
+#5 218.5   - install caqti-driver-sqlite3             2.2.4    [required by octez-l2-libs]
+#5 218.5   - install octez-libs                       22.0     [required by octez-protocol-022-PsRiotum-libs]
+#5 218.5   - install tezt-tezos                       22.0     [required by octez-protocol-022-PsRiotum-libs]
+#5 218.5   - install tezos-dal-node-services          22.0     [required by octez-protocol-022-PsRiotum-libs]
+#5 218.5   - install tezos-benchmark                  22.0     [required by octez-shell-libs]
+#5 218.5   - install octez-version                    22.0     [required by octez-protocol-022-PsRiotum-libs]
+#5 218.5   - install octez-riscv-pvm                  22.0     [required by octez-l2-libs]
+#5 218.5   - install octez-proto-libs                 22.0     [required by octez-protocol-022-PsRiotum-libs]
+#5 218.5   - install octez-performance-metrics        22.0     [required by octez-l2-libs]
+#5 218.5   - install dal_node_migrations              22.0     [required by tezos-dal-node-lib]
+#5 218.5   - install octez-protocol-compiler          22.0     [required by octez-protocol-022-PsRiotum-libs]
+#5 218.5   - install octez-l2-libs                    22.0     [required by octez-protocol-022-PsRiotum-libs]
+#5 218.5   - install octez-shell-libs                 22.0     [required by octez-protocol-022-PsRiotum-libs]
+#5 218.5   - install tezos-protocol-022-PsRiotum      22.0     [required by octez-protocol-022-PsRiotum-libs]
+#5 218.5   - install tezos-dal-node-lib               22.0     [required by octez-protocol-022-PsRiotum-libs]
+#5 218.5   - install octez-node-config                22.0     [required by octez-protocol-022-PsRiotum-libs]
+#5 218.5   - install octez-crawler                    22.0     [required by octez-injector]
+#5 218.5   - install octez-injector                   22.0     [required by octez-protocol-022-PsRiotum-libs]
+#5 218.5   - install octez-protocol-022-PsRiotum-libs 22.0
+#5 218.5 ===== 200 to install =====
+#5 218.5 
+#5 218.5 The following system packages will first need to be installed:
+#5 218.5     autoconf cargo cmake gmp-dev libev-dev libffi-dev sqlite-dev zlib-dev
+#5 218.5 
+#5 218.5 <><> Handling external dependencies <><><><><><><><><><><><><><><><><><><><><><>
+#5 218.5 Let opam run your package manager to install the required system packages?
+#5 218.5 (answer 'n' for other options) [Y/n] y
+#5 218.5 + /usr/bin/sudo "apk" "add" "autoconf" "cargo" "cmake" "gmp-dev" "libev-dev" "libffi-dev" "sqlite-dev" "zlib-dev"
+#5 219.5 - fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/APKINDEX.tar.gz
+#5 219.5 - fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/community/x86_64/APKINDEX.tar.gz
+#5 219.5 - fetch https://dl-cdn.alpinelinux.org/alpine/edge/main/x86_64/APKINDEX.tar.gz
+#5 219.5 - fetch https://dl-cdn.alpinelinux.org/alpine/edge/community/x86_64/APKINDEX.tar.gz
+#5 219.5 - fetch https://dl-cdn.alpinelinux.org/alpine/edge/testing/x86_64/APKINDEX.tar.gz
+#5 220.5 - (1/24) Installing m4 (1.4.19-r3)
+#5 220.5 - (2/24) Installing perl (5.40.1-r1)
+#5 220.5 - (3/24) Installing autoconf (2.72-r0)
+#5 220.5 - (4/24) Installing libxml2 (2.13.4-r6)
+#5 220.5 - (5/24) Installing llvm19-libs (19.1.4-r1)
+#5 221.5 - (6/24) Installing scudo-malloc (19.1.4-r0)
+#5 221.5 - (7/24) Installing rust (1.83.0-r0)
+#5 223.5 - (8/24) Installing cargo (1.83.0-r0)
+#5 223.5 - (9/24) Installing libarchive (3.7.9-r0)
+#5 223.5 - (10/24) Installing rhash-libs (1.4.5-r0)
+#5 223.5 - (11/24) Installing libuv (1.49.2-r0)
+#5 223.5 - (12/24) Installing cmake (3.31.1-r0)
+#5 224.5 - (13/24) Installing perl-error (0.17029-r2)
+#5 224.5 - (14/24) Installing perl-git (2.47.2-r0)
+#5 224.5 - (15/24) Installing git-perl (2.47.2-r0)
+#5 224.5 - (16/24) Installing libgmpxx (6.3.0-r2)
+#5 224.5 - (17/24) Installing gmp-dev (6.3.0-r2)
+#5 224.5 - (18/24) Installing libev (4.33-r1)
+#5 224.5 - (19/24) Installing libev-dev (4.33-r1)
+#5 224.5 - (20/24) Installing linux-headers (6.6-r1)
+#5 224.5 - (21/24) Installing libffi-dev (3.4.7-r0)
+#5 224.5 - (22/24) Installing sqlite (3.48.0-r2)
+#5 224.5 - (23/24) Installing sqlite-dev (3.48.0-r2)
+#5 224.5 - (24/24) Installing zlib-dev (1.3.1-r2)
+#5 224.5 - Executing busybox-1.37.0-r12.trigger
+#5 224.5 - OK: 775 MiB in 126 packages
+#5 224.6 
+#5 224.6 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+#5 225.1 -> retrieved aches-lwt.1.1.0  (https://gitlab.com/nomadic-labs/ringo/-/archive/v1.1.0/ringo-v1.1.0.tar.gz)
+#5 225.1 -> retrieved aches.1.1.0  (https://gitlab.com/nomadic-labs/ringo/-/archive/v1.1.0/ringo-v1.1.0.tar.gz)
+#5 225.4 -> retrieved alcotest.1.9.0  (https://github.com/mirage/alcotest/releases/download/1.9.0/alcotest-1.9.0.tbz)
+#5 225.6 -> retrieved ambient-context.0.1.0  (https://github.com/ELLIOTTCABLE/ocaml-ambient-context/archive/refs/tags/v0.1.0.tar.gz)
+#5 225.7 -> retrieved alcotest-lwt.1.9.0  (https://github.com/mirage/alcotest/releases/download/1.9.0/alcotest-1.9.0.tbz)
+#5 225.7 -> retrieved ambient-context-lwt.0.1.0  (https://github.com/ELLIOTTCABLE/ocaml-ambient-context/archive/refs/tags/v0.1.0.tar.gz)
+#5 225.9 -> retrieved asetmap.0.8.1  (http://erratique.ch/software/asetmap/releases/asetmap-0.8.1.tbz)
+#5 226.0 -> retrieved astring.0.8.5  (https://erratique.ch/software/astring/releases/astring-0.8.5.tbz)
+#5 226.4 -> retrieved asn1-combinators.0.3.2  (https://github.com/mirleft/ocaml-asn1-combinators/releases/download/v0.3.2/asn1-combinators-0.3.2.tbz)
+#5 226.4 -> retrieved base.v0.17.2  (https://opam.ocaml.org/cache)
+#5 226.8 -> retrieved base64.3.5.1  (https://github.com/mirage/ocaml-base64/releases/download/v3.5.1/base64-3.5.1.tbz)
+#5 226.9 -> retrieved angstrom.0.16.1  (https://github.com/inhabitedtype/angstrom/archive/0.16.1.tar.gz)
+#5 227.1 -> retrieved bheap.2.0.0  (https://github.com/backtracking/bheap/releases/download/2.0.0/bheap-2.0.0.tbz)
+#5 227.4 -> retrieved bigstring.0.3  (https://github.com/c-cube/ocaml-bigstring/archive/0.3.tar.gz)
+#5 227.6 -> retrieved bigarray-compat.1.1.0  (https://github.com/mirage/bigarray-compat/releases/download/v1.1.0/bigarray-compat-1.1.0.tbz)
+#5 227.6 -> retrieved bigstringaf.0.10.0  (https://github.com/inhabitedtype/bigstringaf/archive/0.10.0.tar.gz)
+#5 227.7 -> retrieved bos.0.2.1  (https://erratique.ch/software/bos/releases/bos-0.2.1.tbz)
+#5 227.9 -> retrieved ca-certs.1.0.1  (https://opam.ocaml.org/cache)
+#5 228.3 -> retrieved camlp-streams.5.0.1  (https://github.com/ocaml/camlp-streams/archive/v5.0.1.tar.gz)
+#5 228.5 -> retrieved camlzip.1.12  (https://github.com/xavierleroy/camlzip/archive/rel112.tar.gz)
+#5 229.3 -> retrieved caqti.2.2.4  (https://github.com/paurkedal/ocaml-caqti/releases/download/v2.2.4/caqti-v2.2.4.tbz)
+#5 229.3 -> retrieved caqti-driver-sqlite3.2.2.4  (https://github.com/paurkedal/ocaml-caqti/releases/download/v2.2.4/caqti-v2.2.4.tbz)
+#5 229.4 -> retrieved caqti-lwt.2.2.4  (cached)
+#5 230.0 -> retrieved clap.0.3.0  (https://github.com/rbardou/clap/archive/0.3.0.tar.gz)
+#5 230.2 -> retrieved checkseum.0.5.2  (https://github.com/mirage/checkseum/releases/download/v0.5.2/checkseum-0.5.2.tbz)
+#5 230.4 -> retrieved cmdliner.1.3.0  (https://erratique.ch/software/cmdliner/releases/cmdliner-1.3.0.tbz)
+#5 242.2 -> retrieved class_group_vdf.0.0.5  (https://gitlab.com/nomadic-labs/cryptography/ocaml-chia-vdf/-/archive/v0.0.5/ocaml-chia-vdf-v0.0.5.tar.gz)
+#5 242.2 -> retrieved cohttp.5.3.1  (https://github.com/mirage/ocaml-cohttp/releases/download/v5.3.1/cohttp-5.3.1.tbz)
+#5 242.3 -> installed cmdliner.1.3.0
+#5 242.9 -> retrieved conduit.8.0.0  (https://github.com/mirage/ocaml-conduit/releases/download/v8.0.0/conduit-8.0.0.tbz)
+#5 244.2 -> retrieved bls12-381.22.0  (https://gitlab.com/tezos/tezos/-/archive/octez-v22.0/octez-source-22.0.tar.gz)
+#5 244.2 -> retrieved conduit-lwt.8.0.0  (https://github.com/mirage/ocaml-conduit/releases/download/v8.0.0/conduit-8.0.0.tbz)
+#5 244.2 -> retrieved conduit-lwt-unix.8.0.0  (cached)
+#5 244.2 -> installed conf-g++.1.0
+#5 244.3 -> installed conf-autoconf.0.2
+#5 244.5 -> retrieved conf-cmake.1  (https://raw.githubusercontent.com/ocaml/opam-source-archives/main/patches/conf-cmake/configure.sh)
+#5 244.5 -> retrieved conf-gmp.5  (https://raw.githubusercontent.com/ocaml/opam-source-archives/main/patches/conf-gmp/test.c.4)
+#5 244.5 -> retrieved conf-gmp-powm-sec.4  (https://raw.githubusercontent.com/ocaml/opam-source-archives/main/patches/conf-gmp-powm-sec/test.c.3)
+#5 244.5 -> installed conf-cmake.1
+#5 244.5 -> installed conf-gmp.5
+#5 244.5 -> installed conf-pkg-config.4
+#5 244.5 -> installed conf-which.1
+#5 244.5 -> installed conf-gmp-powm-sec.4
+#5 244.5 -> installed conf-libffi.2.0.0
+#5 244.5 -> installed conf-sqlite3.1
+#5 244.5 -> installed conf-zlib.1
+#5 244.8 -> installed conf-rust.0.1
+#5 244.9 -> retrieved conf-libev.4-12  (2 extra sources)
+#5 245.0 -> retrieved cppo.1.8.0  (https://github.com/ocaml-community/cppo/archive/v1.8.0.tar.gz)
+#5 245.2 -> retrieved crunch.4.0.0  (https://github.com/mirage/ocaml-crunch/releases/download/v4.0.0/crunch-4.0.0.tbz)
+#5 245.2 -> installed conf-libev.4-12
+#5 245.6 -> retrieved csexp.1.5.2  (https://github.com/ocaml-dune/csexp/releases/download/1.5.2/csexp-1.5.2.tbz)
+#5 245.7 -> retrieved cstruct.6.2.0  (https://github.com/mirage/ocaml-cstruct/releases/download/v6.2.0/cstruct-6.2.0.tbz)
+#5 245.7 -> retrieved cstruct-lwt.6.2.0  (https://github.com/mirage/ocaml-cstruct/releases/download/v6.2.0/cstruct-6.2.0.tbz)
+#5 250.7 -> retrieved ctypes.0.23.0  (https://github.com/yallop/ocaml-ctypes/archive/refs/tags/0.23.0.tar.gz)
+#5 250.7 -> retrieved ctypes-foreign.0.23.0  (https://github.com/yallop/ocaml-ctypes/archive/refs/tags/0.23.0.tar.gz)
+#5 251.7 -> retrieved digestif.1.3.0  (https://opam.ocaml.org/cache)
+#5 252.3 -> retrieved domain-name.0.4.1  (https://github.com/hannesm/domain-name/releases/download/v0.4.1/domain-name-0.4.1.tbz)
+#5 253.4 -> retrieved dune.3.18.2  (https://opam.ocaml.org/cache)
+#5 256.3 -> retrieved dal_node_migrations.22.0  (cached)
+#5 256.9 -> retrieved dune-configurator.3.18.2  (cached)
+#5 257.7 -> retrieved dune-private-libs.3.18.2  (cached)
+#5 258.1 -> retrieved dune-site.3.18.2  (cached)
+#5 258.5 -> retrieved duration.0.2.1  (https://github.com/hannesm/duration/releases/download/v0.2.1/duration-0.2.1.tbz)
+#5 259.6 -> retrieved dyn.3.18.2  (cached)
+#5 259.6 -> retrieved either.1.0.0  (https://github.com/mirage/either/releases/download/1.0.0/either-1.0.0.tbz)
+#5 260.3 -> retrieved eqaf.0.10  (https://github.com/mirage/eqaf/releases/download/v0.10/eqaf-0.10.tbz)
+#5 260.4 -> retrieved ezjsonm.1.3.0  (https://github.com/mirage/ezjsonm/releases/download/v1.3.0/ezjsonm-1.3.0.tbz)
+#5 260.4 -> retrieved fmt.0.10.0  (https://erratique.ch/software/fmt/releases/fmt-0.10.0.tbz)
+#5 261.1 -> retrieved gmap.0.3.0  (https://github.com/hannesm/gmap/releases/download/0.3.0/gmap-0.3.0.tbz)
+#5 262.0 -> retrieved hacl-star.0.7.2  (https://github.com/cryspen/hacl-packages/releases/download/ocaml-v0.7.2/hacl-star.0.7.2.tar.gz)
+#5 262.1 -> retrieved hacl-star-raw.0.7.2  (cached)
+#5 262.5 -> retrieved fpath.0.7.3  (https://erratique.ch/software/fpath/releases/fpath-0.7.3.tbz)
+#5 262.8 -> retrieved hashcons.1.4.0  (https://github.com/backtracking/ocaml-hashcons/releases/download/1.4.0/hashcons-1.4.0.tbz)
+#5 263.0 -> retrieved hmap.0.8.1  (http://erratique.ch/software/hmap/releases/hmap-0.8.1.tbz)
+#5 263.2 -> retrieved hex.1.5.0  (https://github.com/mirage/ocaml-hex/releases/download/v1.5.0/hex-1.5.0.tbz)
+#5 263.7 -> retrieved integers.0.7.0  (https://github.com/yallop/ocaml-integers/archive/0.7.0.tar.gz)
+#5 263.8 -> retrieved index.1.6.2  (https://github.com/mirage/index/releases/download/1.6.2/index-1.6.2.tbz)
+#5 264.4 -> retrieved ipaddr.5.6.0  (https://github.com/mirage/ocaml-ipaddr/releases/download/v5.6.0/ipaddr-5.6.0.tbz)
+#5 264.4 -> retrieved ipaddr-sexp.5.6.0  (https://github.com/mirage/ocaml-ipaddr/releases/download/v5.6.0/ipaddr-5.6.0.tbz)
+#5 264.5 -> retrieved jsonm.1.0.2  (https://erratique.ch/software/jsonm/releases/jsonm-1.0.2.tbz)
+#5 264.9 -> retrieved jane-street-headers.v0.17.0  (https://github.com/janestreet/jane-street-headers/archive/refs/tags/v0.17.0.tar.gz)
+#5 265.0 -> retrieved jst-config.v0.17.0  (https://github.com/janestreet/jst-config/archive/refs/tags/v0.17.0.tar.gz)
+#5 265.1 -> retrieved logs.0.7.0  (https://erratique.ch/software/logs/releases/logs-0.7.0.tbz)
+#5 265.6 -> retrieved kdf.1.0.0  (https://github.com/robur-coop/kdf/releases/download/v1.0.0/kdf-1.0.0.tbz)
+#5 265.8 -> retrieved lru.0.3.1  (https://github.com/pqwy/lru/releases/download/v0.3.1/lru-0.3.1.tbz)
+#5 266.3 -> retrieved lwt.5.8.1  (https://github.com/ocsigen/lwt/archive/refs/tags/5.8.1.tar.gz)
+#5 266.3 -> retrieved lwt-canceler.0.3  (https://gitlab.com/nomadic-labs/lwt-canceler/-/archive/v0.3/lwt-canceler-v0.3.tar.gz)
+#5 266.5 -> retrieved lwt-dllist.1.1.0  (https://opam.ocaml.org/cache)
+#5 266.6 -> retrieved lwt-exit.1.0  (https://gitlab.com/nomadic-labs/lwt-exit/-/archive/1.0/lwt-exit-1.0.tar.gz)
+#5 266.8 -> retrieved lwt-watcher.0.2  (https://gitlab.com/nomadic-labs/lwt-watcher/-/archive/v0.2/lwt-watcher-v0.2.tar.gz)
+#5 266.8 -> retrieved macaddr.5.6.0  (cached)
+#5 267.1 -> retrieved lwt_ppx.5.9.1  (https://github.com/ocsigen/lwt/archive/refs/tags/5.9.1.tar.gz)
+#5 267.4 -> retrieved magic-mime.1.3.1  (https://github.com/mirage/ocaml-magic-mime/releases/download/v1.3.1/magic-mime-1.3.1.tbz)
+#5 268.7 -> retrieved mirage-crypto.2.0.0  (https://github.com/mirage/mirage-crypto/releases/download/v2.0.0/mirage-crypto-2.0.0.tbz)
+#5 268.8 -> retrieved mirage-crypto-ec.2.0.0  (https://github.com/mirage/mirage-crypto/releases/download/v2.0.0/mirage-crypto-2.0.0.tbz)
+#5 269.3 -> retrieved mirage-crypto-pk.2.0.0  (cached)
+#5 269.4 -> retrieved mtime.2.1.0  (https://erratique.ch/software/mtime/releases/mtime-2.1.0.tbz)
+#5 269.4 -> retrieved mirage-crypto-rng.2.0.0  (cached)
+#5 269.7 -> installed dune.3.18.2
+#5 269.9 -> installed bheap.2.0.0
+#5 269.9 -> installed jane-street-headers.v0.17.0
+#5 270.0 -> retrieved ocaml-compiler-libs.v0.17.0  (https://github.com/janestreet/ocaml-compiler-libs/archive/refs/tags/v0.17.0.tar.gz)
+#5 270.0 -> installed duration.0.2.1
+#5 270.0 -> installed gmap.0.3.0
+#5 270.0 -> installed lwt-dllist.1.1.0
+#5 270.0 -> installed csexp.1.5.2
+#5 270.3 -> installed base64.3.5.1
+#5 270.3 -> installed bigarray-compat.1.1.0
+#5 270.4 -> installed camlp-streams.5.0.1
+#5 270.4 -> installed clap.0.3.0
+#5 270.4 -> installed domain-name.0.4.1
+#5 270.4 -> installed either.1.0.0
+#5 270.4 -> installed eqaf.0.10
+#5 270.4 -> installed hashcons.1.4.0
+#5 270.4 -> installed macaddr.5.6.0
+#5 270.5 -> retrieved ocaml-syntax-shims.1.0.0  (https://github.com/ocaml-ppx/ocaml-syntax-shims/releases/download/1.0.0/ocaml-syntax-shims-1.0.0.tbz)
+#5 270.5 -> retrieved ocaml_intrinsics_kernel.v0.17.1  (https://github.com/janestreet/ocaml_intrinsics_kernel/archive/refs/tags/v0.17.1.tar.gz)
+#5 270.5 -> installed magic-mime.1.3.1
+#5 270.9 -> installed cppo.1.8.0
+#5 271.1 -> retrieved ocamlbuild.0.16.1  (https://github.com/ocaml/ocamlbuild/archive/refs/tags/0.16.1.tar.gz)
+#5 271.1 -> retrieved ocamlfind.1.9.8  (https://github.com/ocaml/ocamlfind/archive/refs/tags/findlib-1.9.8.tar.gz)
+#5 271.2 -> installed ocaml-compiler-libs.v0.17.0
+#5 271.2 -> installed ipaddr.5.6.0
+#5 271.3 -> installed ocaml_intrinsics_kernel.v0.17.1
+#5 271.4 -> retrieved ocamlgraph.2.2.0  (https://opam.ocaml.org/cache)
+#5 271.5 -> installed digestif.1.3.0
+#5 271.6 -> retrieved ocp-ocamlres.0.4  (https://github.com/OCamlPro/ocp-ocamlres/archive/v0.4.tar.gz)
+#5 276.9 -> installed ocaml-syntax-shims.1.0.0
+#5 276.9 -> installed dune-configurator.3.18.2
+#5 277.0 -> installed ocamlbuild.0.16.1
+#5 277.3 -> installed ocamlgraph.2.2.0
+#5 277.3 -> retrieved ocplib-endian.1.2  (https://github.com/OCamlPro/ocplib-endian/archive/refs/tags/1.2.tar.gz)
+#5 284.2 -> retrieved octez-alcotezt.22.0  (cached)
+#5 289.3 -> installed bigstringaf.0.10.0
+#5 289.4 -> installed mirage-crypto.2.0.0
+#5 291.0 -> retrieved octez-crawler.22.0  (cached)
+#5 296.1 -> retrieved decompress.1.5.3  (https://github.com/mirage/decompress/releases/download/v1.5.3/decompress-1.5.3.tbz)
+#5 302.5 -> retrieved octez-distributed-internal.22.0  (cached)
+#5 308.7 -> installed ocamlfind.1.9.8
+#5 308.7 -> installed angstrom.0.16.1
+#5 308.7 -> installed base-bytes.base
+#5 308.7 -> installed kdf.1.0.0
+#5 310.2 -> retrieved octez-distributed-lwt-internal.22.0  (cached)
+#5 317.3 -> retrieved octez-injector.22.0  (cached)
+#5 323.9 -> retrieved octez-internal-libs.22.0  (cached)
+#5 330.8 -> retrieved octez-l2-libs.22.0  (cached)
+#5 340.8 -> retrieved octez-libs.22.0  (cached)
+#5 350.9 -> retrieved octez-node-config.22.0  (cached)
+#5 358.6 -> installed camlzip.1.12
+#5 358.7 -> installed bigstring.0.3
+#5 358.7 -> installed ocplib-endian.1.2
+#5 358.8 -> installed octez-distributed-internal.22.0
+#5 360.9 -> retrieved octez-performance-metrics.22.0  (cached)
+#5 370.8 -> retrieved octez-proto-libs.22.0  (cached)
+#5 377.8 -> retrieved octez-protocol-022-PsRiotum-libs.22.0  (cached)
+#5 385.4 -> retrieved octez-protocol-compiler.22.0  (cached)
+#5 391.7 -> retrieved octez-protocol-compiler-compat.22.0  (cached)
+#5 399.3 -> retrieved octez-riscv-api.22.0  (cached)
+#5 405.7 -> installed lwt.5.8.1
+#5 419.7 -> retrieved octez-riscv-pvm.22.0  (cached)
+#5 432.0 -> retrieved octez-rust-deps.22.0  (cached)
+#5 447.1 -> retrieved octez-rustzcash-deps.22.0  (cached)
+#5 448.1 -> installed lwt-canceler.0.3
+#5 448.1 -> installed lwt-watcher.0.2
+#5 450.5 -> retrieved octez-shell-libs.22.0  (cached)
+#5 451.8 -> retrieved octez-version.22.0  (cached)
+#5 451.8 -> installed octez-protocol-compiler-compat.22.0
+#5 451.8 -> installed octez-riscv-api.22.0
+#5 451.8 -> retrieved ohex.0.2.0  (https://github.com/ocaml/opam-source-archives/raw/main/ohex-0.2.0.tar.gz)
+#5 451.9 -> retrieved opentelemetry.0.10  (https://github.com/imandra-ai/ocaml-opentelemetry/releases/download/v0.10/opentelemetry-0.10.tbz)
+#5 452.0 -> installed ohex.0.2.0
+#5 452.7 -> retrieved ordering.3.18.2  (cached)
+#5 452.9 [ERROR] The compilation of octez-rustzcash-deps.22.0 failed at "dune build -p octez-rustzcash-deps -j 255".
+#5 453.0 -> retrieved optint.0.3.0  (https://github.com/mirage/optint/releases/download/v0.3.0/optint-0.3.0.tbz)
+#5 453.0 -> retrieved pbrt.3.1.1  (https://github.com/mransan/ocaml-protoc/releases/download/v3.1.1/ocaml-protoc-3.1.1.tbz)
+#5 453.2 -> installed optint.0.3.0
+#5 453.4 -> retrieved pp.2.0.0  (https://github.com/ocaml-dune/pp/releases/download/2.0.0/pp-2.0.0.tbz)
+#5 454.0 -> retrieved pprint.20230830  (https://github.com/fpottier/pprint/archive/20230830.tar.gz)
+#5 454.1 -> retrieved ppx_assert.v0.17.0  (https://github.com/janestreet/ppx_assert/archive/refs/tags/v0.17.0.tar.gz)
+#5 454.1 [ERROR] The compilation of octez-rust-deps.22.0 failed at "dune build -p octez-rust-deps -j 255".
+#5 454.1 -> retrieved ppx_base.v0.17.0  (https://github.com/janestreet/ppx_base/archive/refs/tags/v0.17.0.tar.gz)
+#5 454.1 -> installed ordering.3.18.2
+#5 454.2 -> installed pp.2.0.0
+#5 454.8 -> installed checkseum.0.5.2
+#5 454.8 -> installed pprint.20230830
+#5 454.9 -> retrieved ppx_cold.v0.17.0  (https://github.com/janestreet/ppx_cold/archive/refs/tags/v0.17.0.tar.gz)
+#5 454.9 -> retrieved ppx_compare.v0.17.0  (https://github.com/janestreet/ppx_compare/archive/refs/tags/v0.17.0.tar.gz)
+#5 454.9 -> retrieved ppx_derivers.1.2.1  (https://github.com/ocaml-ppx/ppx_derivers/archive/1.2.1.tar.gz)
+#5 455.0 -> installed ppx_derivers.1.2.1
+#5 455.3 -> installed dyn.3.18.2
+#5 455.5 -> retrieved ppx_enumerate.v0.17.0  (https://github.com/janestreet/ppx_enumerate/archive/refs/tags/v0.17.0.tar.gz)
+#5 455.6 -> retrieved ppx_expect.v0.17.2  (https://github.com/janestreet/ppx_expect/archive/refs/tags/v0.17.2.tar.gz)
+#5 455.7 -> installed decompress.1.5.3
+#5 455.8 -> retrieved ppx_deriving.6.0.3  (https://github.com/ocaml-ppx/ppx_deriving/releases/download/v6.0.3/ppx_deriving-6.0.3.tbz)
+#5 456.2 -> retrieved ppx_globalize.v0.17.0  (https://github.com/janestreet/ppx_globalize/archive/refs/tags/v0.17.0.tar.gz)
+#5 456.2 -> retrieved ppx_hash.v0.17.0  (https://github.com/janestreet/ppx_hash/archive/refs/tags/v0.17.0.tar.gz)
+#5 456.8 -> retrieved ppx_inline_test.v0.17.0  (https://github.com/janestreet/ppx_inline_test/archive/refs/tags/v0.17.0.tar.gz)
+#5 457.0 -> retrieved ppx_import.1.11.0  (https://github.com/ocaml-ppx/ppx_import/releases/download/v1.11.0/ppx_import-1.11.0.tbz)
+#5 457.3 -> retrieved ppx_optcomp.v0.17.0  (https://github.com/janestreet/ppx_optcomp/archive/refs/tags/v0.17.0.tar.gz)
+#5 457.6 -> retrieved ppx_here.v0.17.0  (https://github.com/janestreet/ppx_here/archive/refs/tags/v0.17.0.tar.gz)
+#5 457.8 -> retrieved ppx_repr.0.7.0  (https://github.com/mirage/repr/releases/download/0.7.0/repr-0.7.0.tbz)
+#5 458.0 -> retrieved ppx_sexp_conv.v0.17.0  (https://github.com/janestreet/ppx_sexp_conv/archive/refs/tags/v0.17.0.tar.gz)
+#5 458.5 -> retrieved ppxlib_jane.v0.17.0  (https://github.com/janestreet/ppxlib_jane/archive/refs/tags/v0.17.0.tar.gz)
+#5 458.5 -> retrieved ppxlib.0.35.0  (https://github.com/ocaml-ppx/ppxlib/releases/download/0.35.0/ppxlib-0.35.0.tbz)
+#5 458.5 -> retrieved prbnmcn-basic-structures.0.0.1  (https://github.com/igarnier/prbnmcn-basic-structures/archive/0.0.1.tar.gz)
+#5 459.1 -> retrieved prbnmcn-linalg.0.0.1  (https://github.com/igarnier/prbnmcn-linalg/archive/0.0.1.tar.gz)
+#5 459.1 -> retrieved pringo.1.3  (https://github.com/xavierleroy/pringo/archive/1.3.tar.gz)
+#5 459.2 -> retrieved prbnmcn-stats.0.0.6  (https://github.com/igarnier/prbnmcn-stats/archive/refs/tags/0.0.6.tar.gz)
+#5 459.3 -> retrieved ptime.1.2.0  (https://erratique.ch/software/ptime/releases/ptime-1.2.0.tbz)
+#5 459.7 -> installed pringo.1.3
+#5 459.7 -> retrieved pure-splitmix.0.3  (https://github.com/Lysxia/pure-splitmix/archive/0.3.tar.gz)
+#5 459.9 -> retrieved psq.0.2.1  (https://github.com/pqwy/psq/releases/download/v0.2.1/psq-0.2.1.tbz)
+#5 459.9 -> installed pure-splitmix.0.3
+#5 460.1 -> retrieved progress.0.4.0  (https://github.com/craigfe/progress/releases/download/0.4.0/progress-0.4.0.tbz)
+#5 460.4 -> retrieved qcheck-core.0.25  (https://github.com/c-cube/qcheck/archive/v0.25.tar.gz)
+#5 460.5 -> retrieved qcheck-alcotest.0.25  (https://github.com/c-cube/qcheck/archive/v0.25.tar.gz)
+#5 460.5 -> retrieved repr.0.7.0  (cached)
+#5 460.5 -> retrieved ringo.1.1.0  (cached)
+#5 460.5 -> retrieved pyml.20231101  (https://github.com/thierry-martinez/pyml/releases/download/20231101/pyml.20231101.tar.gz)
+#5 460.6 -> retrieved rresult.0.7.0  (https://erratique.ch/software/rresult/releases/rresult-0.7.0.tbz)
+#5 460.8 -> installed ringo.1.1.0
+#5 461.1 -> retrieved re.1.12.0  (https://github.com/ocaml/ocaml-re/releases/download/1.12.0/re-1.12.0.tbz)
+#5 461.3 -> installed aches.1.1.0
+#5 461.5 -> retrieved secp256k1-internal.0.4.0  (https://gitlab.com/nomadic-labs/ocaml-secp256k1-internal/-/archive/v0.4/ocaml-secp256k1-internal-v0.4.tar.gz)
+#5 461.6 -> retrieved rusage.1.0.0  (https://github.com/CraigFe/ocaml-rusage/releases/download/1.0.0/rusage-1.0.0.tbz)
+#5 461.6 -> retrieved seq.base  (2 extra sources)
+#5 461.6 -> installed seq.base
+#5 461.8 -> installed aches-lwt.1.1.0
+#5 461.9 -> installed rusage.1.0.0
+#5 461.9 -> retrieved semaphore-compat.1.0.2  (https://github.com/mirage/semaphore-compat/releases/download/1.0.2/semaphore-compat-1.0.2.tbz)
+#5 462.1 -> installed qcheck-core.0.25
+#5 462.2 -> retrieved seqes.0.4  (https://gitlab.com/raphael-proust/seqes/-/archive/0.4/seqes-0.4.tar.gz)
+#5 462.2 -> installed psq.0.2.1
+#5 462.3 -> retrieved sexplib0.v0.17.0  (https://github.com/janestreet/sexplib0/archive/refs/tags/v0.17.0.tar.gz)
+#5 462.6 -> installed semaphore-compat.1.0.2
+#5 462.7 -> retrieved stdcompat.20.1  (https://opam.ocaml.org/cache)
+#5 462.9 -> installed lru.0.3.1
+#5 462.9 -> retrieved sqlite3.5.3.1  (https://github.com/mmottl/sqlite3-ocaml/releases/download/5.3.1/sqlite3-5.3.1.tbz)
+#5 463.1 -> installed re.1.12.0
+#5 463.3 -> installed seqes.0.4
+#5 463.3 -> installed sexplib0.v0.17.0
+#5 463.4 -> retrieved stdio.v0.17.0  (https://github.com/janestreet/stdio/archive/refs/tags/v0.17.0.tar.gz)
+#5 463.5 -> retrieved stdint.0.7.2  (https://github.com/andrenth/ocaml-stdint/releases/download/0.7.2/stdint-0.7.2.tbz)
+#5 463.7 -> retrieved stdlib-random.1.2.0  (https://github.com/ocaml/stdlib-random/archive/refs/tags/1.2.0.tar.gz)
+#5 464.4 -> retrieved stdlib-shims.0.3.0  (https://github.com/ocaml/stdlib-shims/releases/download/0.3.0/stdlib-shims-0.3.0.tbz)
+#5 464.7 -> retrieved stringext.1.6.0  (https://github.com/rgrinberg/stringext/releases/download/1.6.0/stringext-1.6.0.tbz)
+#5 465.1 -> installed stdlib-random.1.2.0
+#5 465.1 -> installed stringext.1.6.0
+#5 465.4 -> retrieved tar.2.6.0  (https://github.com/mirage/ocaml-tar/releases/download/v2.6.0/tar-2.6.0.tbz)
+#5 465.5 -> retrieved tar-unix.2.6.0  (https://github.com/mirage/ocaml-tar/releases/download/v2.6.0/tar-2.6.0.tbz)
+#5 465.6 -> installed stdint.0.7.2
+#5 465.6 -> installed sqlite3.5.3.1
+#5 465.7 -> retrieved terminal.0.4.0  (cached)
+#5 473.4 -> installed base.v0.17.2
+#5 474.0 -> retrieved stdune.3.18.2  (cached)
+#5 482.4 -> installed stdcompat.20.1
+#5 482.5 -> installed stdlib-shims.0.3.0
+#5 485.8 -> retrieved tezos-benchmark.22.0  (cached)
+#5 493.5 -> installed stdio.v0.17.0
+#5 493.6 -> installed pyml.20231101
+#5 493.6 -> installed integers.0.7.0
+#5 493.8 -> installed pbrt.3.1.1
+#5 493.9 -> retrieved terminal_size.0.2.0  (https://github.com/cryptosense/terminal_size/releases/download/v0.2.0/terminal_size-0.2.0.tbz)
+#5 503.5 -> retrieved tezos-dal-node-lib.22.0  (cached)
+#5 504.0 -> installed ppxlib.0.35.0
+#5 508.6 -> retrieved tezos-dal-node-services.22.0  (cached)
+#5 508.6 -> installed terminal_size.0.2.0
+#5 518.5 -> retrieved tezos-protocol-022-PsRiotum.22.0  (cached)
+#5 526.6 -> installed lwt_ppx.5.9.1
+#5 526.7 -> installed ppx_cold.v0.17.0
+#5 526.8 -> installed ppx_deriving.6.0.3
+#5 526.9 -> installed ppx_here.v0.17.0
+#5 527.0 -> installed ppx_import.1.11.0
+#5 527.0 -> installed ppx_optcomp.v0.17.0
+#5 527.0 -> installed ppxlib_jane.v0.17.0
+#5 527.5 -> installed stdune.3.18.2
+#5 529.6 -> installed ctypes.0.23.0
+#5 530.0 -> retrieved tezos-sapling-parameters.1.1.0  (https://gitlab.com/tezos/tezos-sapling-parameters/-/archive/1.1.0/tezos-sapling-parameters-1.1.0.tar.bz2)
+#5 530.1 -> installed tezos-sapling-parameters.1.1.0
+#5 530.2 -> installed ppx_compare.v0.17.0
+#5 530.2 -> installed ppx_enumerate.v0.17.0
+#5 530.2 -> installed ppx_globalize.v0.17.0
+#5 530.2 -> retrieved tezt.4.2.0  (https://gitlab.com/nomadic-labs/tezt/-/archive/4.2.0/tezt-4.2.0.tar.bz2)
+#5 530.6 -> retrieved time_now.v0.17.0  (https://github.com/janestreet/time_now/archive/refs/tags/v0.17.0.tar.gz)
+#5 530.6 -> retrieved tls.2.0.1  (https://opam.ocaml.org/cache)
+#5 530.8 -> retrieved topkg.1.0.8  (https://erratique.ch/software/topkg/releases/topkg-1.0.8.tbz)
+#5 531.6 -> installed ppx_sexp_conv.v0.17.0
+#5 531.7 -> retrieved uri.4.4.0  (https://github.com/mirage/ocaml-uri/releases/download/v4.4.0/uri-4.4.0.tbz)
+#5 531.7 -> retrieved uri-sexp.4.4.0  (https://github.com/mirage/ocaml-uri/releases/download/v4.4.0/uri-4.4.0.tbz)
+#5 532.1 -> retrieved uutf.1.0.4  (https://erratique.ch/software/uutf/releases/uutf-1.0.4.tbz)
+#5 532.3 -> retrieved uucp.16.0.0  (https://erratique.ch/software/uucp/releases/uucp-16.0.0.tbz)
+#5 532.6 -> installed ctypes-foreign.0.23.0
+#5 532.8 -> installed dune-private-libs.3.18.2
+#5 535.1 -> installed ipaddr-sexp.5.6.0
+#5 535.1 -> installed ppx_hash.v0.17.0
+#5 535.2 -> installed uri.4.4.0
+#5 535.3 -> retrieved x509.1.0.6  (https://opam.ocaml.org/cache)
+#5 535.3 -> retrieved vector.1.0.0  (https://github.com/backtracking/vector/releases/download/1.0.0/vector-1.0.0.tbz)
+#5 539.8 -> retrieved tezt-tezos.22.0  (cached)
+#5 539.9 -> installed ppx_assert.v0.17.0
+#5 540.0 -> installed ppx_base.v0.17.0
+#5 540.0 -> installed uri-sexp.4.4.0
+#5 540.1 -> installed vector.1.0.0
+#5 540.1 -> installed dune-site.3.18.2
+#5 540.1 -> retrieved yaml.3.2.0  (https://github.com/avsm/ocaml-yaml/releases/download/v3.2.0/yaml-3.2.0.tbz)
+#5 540.1 -> retrieved zarith.1.13  (https://github.com/ocaml/Zarith/archive/release-1.13.tar.gz)
+#5 540.2 -> installed topkg.1.0.8
+#5 540.4 -> installed hmap.0.8.1
+#5 540.5 -> installed asetmap.0.8.1
+#5 540.6 -> installed rresult.0.7.0
+#5 541.6 -> installed ambient-context.0.1.0
+#5 541.8 -> installed uutf.1.0.4
+#5 541.8 -> installed ambient-context-lwt.0.1.0
+#5 541.9 -> installed fmt.0.10.0
+#5 541.9 -> installed mtime.2.1.0
+#5 542.0 -> installed ptime.1.2.0
+#5 542.1 -> installed astring.0.8.5
+#5 542.4 -> installed lwt-exit.1.0
+#5 542.5 -> installed cstruct.6.2.0
+#5 543.0 -> installed crunch.4.0.0
+#5 543.0 -> installed jst-config.v0.17.0
+#5 543.0 -> installed cstruct-lwt.6.2.0
+#5 543.1 -> installed hex.1.5.0
+#5 543.3 -> installed asn1-combinators.0.3.2
+#5 543.4 -> installed fpath.0.7.3
+#5 543.5 -> installed jsonm.1.0.2
+#5 543.6 -> installed tar.2.6.0
+#5 544.7 -> installed logs.0.7.0
+#5 551.2 -> installed zarith.1.13
+#5 557.0 -> installed alcotest.1.9.0
+#5 557.1 -> installed bos.0.2.1
+#5 557.2 -> installed cohttp.5.3.1
+#5 557.2 -> installed conduit.8.0.0
+#5 557.2 -> installed ezjsonm.1.3.0
+#5 557.3 -> installed mirage-crypto-rng.2.0.0
+#5 557.5 -> installed repr.0.7.0
+#5 557.6 -> installed secp256k1-internal.0.4.0
+#5 557.6 -> installed time_now.v0.17.0
+#5 557.7 -> installed opentelemetry.0.10
+#5 558.2 -> installed ocp-ocamlres.0.4
+#5 558.2 -> installed alcotest-lwt.1.9.0
+#5 559.0 -> installed octez-distributed-lwt-internal.22.0
+#5 559.0 -> installed prbnmcn-basic-structures.0.0.1
+#5 559.0 -> installed qcheck-alcotest.0.25
+#5 559.1 -> installed tar-unix.2.6.0
+#5 559.1 -> installed conduit-lwt.8.0.0
+#5 559.1 -> installed mirage-crypto-pk.2.0.0
+#5 560.2 -> installed prbnmcn-stats.0.0.6
+#5 560.5 -> installed tezt.4.2.0
+#5 568.6 -> installed uucp.16.0.0
+#5 568.6 -> installed class_group_vdf.0.0.5
+#5 568.6 -> installed yaml.3.2.0
+#5 568.7 -> installed mirage-crypto-ec.2.0.0
+#5 568.7 -> installed ppx_repr.0.7.0
+#5 568.8 -> installed ppx_inline_test.v0.17.0
+#5 568.9 -> installed bls12-381.22.0
+#5 568.9 -> installed prbnmcn-linalg.0.0.1
+#5 568.9 -> installed terminal.0.4.0
+#5 569.9 -> installed x509.1.0.6
+#5 570.2 -> installed progress.0.4.0
+#5 570.9 -> installed ca-certs.1.0.1
+#5 571.0 -> installed octez-alcotezt.22.0
+#5 572.2 -> installed ppx_expect.v0.17.2
+#5 572.2 -> installed tls.2.0.1
+#5 572.6 -> installed conduit-lwt-unix.8.0.0
+#5 572.7 -> installed index.1.6.2
+#5 580.5 -> installed caqti.2.2.4
+#5 581.1 -> installed caqti-driver-sqlite3.2.2.4
+#5 581.2 -> installed caqti-lwt.2.2.4
+#5 602.9 -> installed octez-internal-libs.22.0
+#5 681.4 -> installed hacl-star-raw.0.7.2
+#5 681.9 -> installed hacl-star.0.7.2
+#5 707.7 -> installed octez-libs.22.0
+#5 746.2 -> installed octez-performance-metrics.22.0
+#5 746.7 -> installed octez-riscv-pvm.22.0
+#5 747.7 -> installed tezos-dal-node-services.22.0
+#5 748.5 -> installed dal_node_migrations.22.0
+#5 752.5 -> installed octez-version.22.0
+#5 754.2 -> installed tezos-benchmark.22.0
+#5 759.9 -> installed tezt-tezos.22.0
+#5 762.2 -> installed octez-proto-libs.22.0
+#5 775.1 -> installed octez-protocol-compiler.22.0
+#5 791.1 -> installed octez-shell-libs.22.0
+#5 803.4 -> installed octez-crawler.22.0
+#5 806.4 -> installed octez-node-config.22.0
+#5 809.0 -> installed octez-injector.22.0
+#5 809.0 
+#5 809.0 #=== ERROR while compiling octez-rustzcash-deps.22.0 ==========================#
+#5 809.0 # context              2.1.6 | linux/x86_64 | ocaml-base-compiler.5.2.1 | git+https://github.com/tezos/opam-repository.git#octez-22.0
+#5 809.0 # path                 ~/.opam/5.2/.opam-switch/build/octez-rustzcash-deps.22.0
+#5 809.0 # command              ~/.opam/5.2/bin/dune build -p octez-rustzcash-deps -j 255
+#5 809.0 # exit-code            1
+#5 809.0 # env-file             ~/.opam/log/octez-rustzcash-deps-337-9a0f19.env
+#5 809.0 # output-file          ~/.opam/log/octez-rustzcash-deps-337-9a0f19.out
+#5 809.0 ### output ###
+#5 809.0 # File "src/rustzcash_deps/dune", lines 12-23, characters 0-292:
+#5 809.0 # 12 | (rule
+#5 809.0 # 13 |  (targets liboctez_rustzcash_deps.a dlloctez_rustzcash_deps.so)
+#5 809.0 # 14 |  (deps
+#5 809.0 # ....
+#5 809.0 # 21 |   (source_tree include)
+#5 809.0 # 22 |   (source_tree src))
+#5 809.0 # 23 |  (action (no-infer (bash ./build.sh))))
+#5 809.0 # (cd _build/default/src/rustzcash_deps && /bin/bash -e -u -o pipefail -c ./build.sh)
+#5 809.0 # error: output of --print=file-names missing when learning about target-specific information from rustc
+#5 809.0 # command was: `/home/opam/.rustup/toolchains/1.77.2-x86_64-unknown-linux-musl/bin/rustc - --crate-name ___ --print=file-names -Awarnings --crate-type bin --crate-type rlib --crate-type dylib --crate-type cdylib --crate-type staticlib --crate-type proc-macro --print=sysroot --print=split-debuginfo --print=crate-name --print=cfg`
+#5 809.0 # 
+#5 809.0 # --- stdout
+#5 809.0 # ___
+#5 809.0 # lib___.rlib
+#5 809.0 # lib___.a
+#5 809.0 # lib___.so
+#5 809.0 # /home/opam/.rustup/toolchains/1.77.2-x86_64-unknown-linux-musl
+#5 809.0 # off
+#5 809.0 # packed
+#5 809.0 # unpacked
+#5 809.0 # ___
+#5 809.0 # debug_assertions
+#5 809.0 # panic="unwind"
+#5 809.0 # proc_macro
+#5 809.0 # target_arch="x86_64"
+#5 809.0 # target_endian="little"
+#5 809.0 # target_env="musl"
+#5 809.0 # target_family="unix"
+#5 809.0 # target_feature="fxsr"
+#5 809.0 # target_feature="sse"
+#5 809.0 # target_feature="sse2"
+#5 809.0 # target_has_atomic="16"
+#5 809.0 # target_has_atomic="32"
+#5 809.0 # target_has_atomic="64"
+#5 809.0 # target_has_atomic="8"
+#5 809.0 # target_has_atomic="ptr"
+#5 809.0 # target_os="linux"
+#5 809.0 # target_pointer_width="64"
+#5 809.0 # target_vendor="unknown"
+#5 809.0 # unix
+#5 809.0 # 
+#5 809.0 
+#5 809.0 
+#5 809.0 #=== ERROR while compiling octez-rust-deps.22.0 ===============================#
+#5 809.0 # context              2.1.6 | linux/x86_64 | ocaml-base-compiler.5.2.1 | git+https://github.com/tezos/opam-repository.git#octez-22.0
+#5 809.0 # path                 ~/.opam/5.2/.opam-switch/build/octez-rust-deps.22.0
+#5 809.0 # command              ~/.opam/5.2/bin/dune build -p octez-rust-deps -j 255
+#5 809.0 # exit-code            1
+#5 809.0 # env-file             ~/.opam/log/octez-rust-deps-337-5fb23d.env
+#5 809.0 # output-file          ~/.opam/log/octez-rust-deps-337-5fb23d.out
+#5 809.0 ### output ###
+#5 809.0 # File "src/rust_deps/dune", lines 12-26, characters 0-403:
+#5 809.0 # 12 | (rule
+#5 809.0 # 13 |  (targets liboctez_rust_deps.a dlloctez_rust_deps.so wasmer.h wasm.h)
+#5 809.0 # 14 |  (deps
+#5 809.0 # ....
+#5 809.0 # 24 |   (source_tree ../kernel_sdk)
+#5 809.0 # 25 |   (source_tree ../../sdk/rust))
+#5 809.0 # 26 |  (action (no-infer (bash ./build.sh))))
+#5 809.0 # (cd _build/default/src/rust_deps && /bin/bash -e -u -o pipefail -c ./build.sh)
+#5 809.0 # error: output of --print=file-names missing when learning about target-specific information from rustc
+#5 809.0 # command was: `/home/opam/.rustup/toolchains/1.77.2-x86_64-unknown-linux-musl/bin/rustc - --crate-name ___ --print=file-names -Awarnings --crate-type bin --crate-type rlib --crate-type dylib --crate-type cdylib --crate-type staticlib --crate-type proc-macro --print=sysroot --print=split-debuginfo --print=crate-name --print=cfg`
+#5 809.0 # 
+#5 809.0 # --- stdout
+#5 809.0 # ___
+#5 809.0 # lib___.rlib
+#5 809.0 # lib___.a
+#5 809.0 # lib___.so
+#5 809.0 # /home/opam/.rustup/toolchains/1.77.2-x86_64-unknown-linux-musl
+#5 809.0 # off
+#5 809.0 # packed
+#5 809.0 # unpacked
+#5 809.0 # ___
+#5 809.0 # debug_assertions
+#5 809.0 # panic="unwind"
+#5 809.0 # proc_macro
+#5 809.0 # target_arch="x86_64"
+#5 809.0 # target_endian="little"
+#5 809.0 # target_env="musl"
+#5 809.0 # target_family="unix"
+#5 809.0 # target_feature="fxsr"
+#5 809.0 # target_feature="sse"
+#5 809.0 # target_feature="sse2"
+#5 809.0 # target_has_atomic="16"
+#5 809.0 # target_has_atomic="32"
+#5 809.0 # target_has_atomic="64"
+#5 809.0 # target_has_atomic="8"
+#5 809.0 # target_has_atomic="ptr"
+#5 809.0 # target_os="linux"
+#5 809.0 # target_pointer_width="64"
+#5 809.0 # target_vendor="unknown"
+#5 809.0 # unix
+#5 809.0 # 
+#5 809.0 
+#5 830.3 
+#5 830.3 
+#5 830.3 <><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+#5 830.3 +- The following actions failed
+#5 830.3 | - build octez-rust-deps      22.0
+#5 830.3 | - build octez-rustzcash-deps 22.0
+#5 830.3 +- 
+#5 830.3 +- The following changes have been performed (the rest was aborted)
+#5 830.3 | - install aches                          1.1.0
+#5 830.3 | - install aches-lwt                      1.1.0
+#5 830.3 | - install alcotest                       1.9.0
+#5 830.3 | - install alcotest-lwt                   1.9.0
+#5 830.3 | - install ambient-context                0.1.0
+#5 830.3 | - install ambient-context-lwt            0.1.0
+#5 830.3 | - install angstrom                       0.16.1
+#5 830.3 | - install asetmap                        0.8.1
+#5 830.3 | - install asn1-combinators               0.3.2
+#5 830.3 | - install astring                        0.8.5
+#5 830.3 | - install base                           v0.17.2
+#5 830.3 | - install base-bytes                     base
+#5 830.3 | - install base64                         3.5.1
+#5 830.3 | - install bheap                          2.0.0
+#5 830.3 | - install bigarray-compat                1.1.0
+#5 830.3 | - install bigstring                      0.3
+#5 830.3 | - install bigstringaf                    0.10.0
+#5 830.3 | - install bls12-381                      22.0
+#5 830.3 | - install bos                            0.2.1
+#5 830.3 | - install ca-certs                       1.0.1
+#5 830.3 | - install camlp-streams                  5.0.1
+#5 830.3 | - install camlzip                        1.12
+#5 830.3 | - install caqti                          2.2.4
+#5 830.3 | - install caqti-driver-sqlite3           2.2.4
+#5 830.3 | - install caqti-lwt                      2.2.4
+#5 830.3 | - install checkseum                      0.5.2
+#5 830.3 | - install clap                           0.3.0
+#5 830.3 | - install class_group_vdf                0.0.5
+#5 830.3 | - install cmdliner                       1.3.0
+#5 830.3 | - install cohttp                         5.3.1
+#5 830.3 | - install conduit                        8.0.0
+#5 830.3 | - install conduit-lwt                    8.0.0
+#5 830.3 | - install conduit-lwt-unix               8.0.0
+#5 830.3 | - install conf-autoconf                  0.2
+#5 830.3 | - install conf-cmake                     1
+#5 830.3 | - install conf-g++                       1.0
+#5 830.3 | - install conf-gmp                       5
+#5 830.3 | - install conf-gmp-powm-sec              4
+#5 830.3 | - install conf-libev                     4-12
+#5 830.3 | - install conf-libffi                    2.0.0
+#5 830.3 | - install conf-pkg-config                4
+#5 830.3 | - install conf-rust                      0.1
+#5 830.3 | - install conf-sqlite3                   1
+#5 830.3 | - install conf-which                     1
+#5 830.3 | - install conf-zlib                      1
+#5 830.3 | - install cppo                           1.8.0
+#5 830.3 | - install crunch                         4.0.0
+#5 830.3 | - install csexp                          1.5.2
+#5 830.3 | - install cstruct                        6.2.0
+#5 830.3 | - install cstruct-lwt                    6.2.0
+#5 830.3 | - install ctypes                         0.23.0
+#5 830.3 | - install ctypes-foreign                 0.23.0
+#5 830.3 | - install dal_node_migrations            22.0
+#5 830.3 | - install decompress                     1.5.3
+#5 830.3 | - install digestif                       1.3.0
+#5 830.3 | - install domain-name                    0.4.1
+#5 830.3 | - install dune                           3.18.2
+#5 830.3 | - install dune-configurator              3.18.2
+#5 830.3 | - install dune-private-libs              3.18.2
+#5 830.3 | - install dune-site                      3.18.2
+#5 830.3 | - install duration                       0.2.1
+#5 830.3 | - install dyn                            3.18.2
+#5 830.3 | - install either                         1.0.0
+#5 830.3 | - install eqaf                           0.10
+#5 830.3 | - install ezjsonm                        1.3.0
+#5 830.3 | - install fmt                            0.10.0
+#5 830.3 | - install fpath                          0.7.3
+#5 830.3 | - install gmap                           0.3.0
+#5 830.3 | - install hacl-star                      0.7.2
+#5 830.3 | - install hacl-star-raw                  0.7.2
+#5 830.3 | - install hashcons                       1.4.0
+#5 830.3 | - install hex                            1.5.0
+#5 830.3 | - install hmap                           0.8.1
+#5 830.3 | - install index                          1.6.2
+#5 830.3 | - install integers                       0.7.0
+#5 830.3 | - install ipaddr                         5.6.0
+#5 830.3 | - install ipaddr-sexp                    5.6.0
+#5 830.3 | - install jane-street-headers            v0.17.0
+#5 830.3 | - install jsonm                          1.0.2
+#5 830.3 | - install jst-config                     v0.17.0
+#5 830.3 | - install kdf                            1.0.0
+#5 830.3 | - install logs                           0.7.0
+#5 830.3 | - install lru                            0.3.1
+#5 830.3 | - install lwt                            5.8.1
+#5 830.3 | - install lwt-canceler                   0.3
+#5 830.3 | - install lwt-dllist                     1.1.0
+#5 830.3 | - install lwt-exit                       1.0
+#5 830.3 | - install lwt-watcher                    0.2
+#5 830.3 | - install lwt_ppx                        5.9.1
+#5 830.3 | - install macaddr                        5.6.0
+#5 830.3 | - install magic-mime                     1.3.1
+#5 830.3 | - install mirage-crypto                  2.0.0
+#5 830.3 | - install mirage-crypto-ec               2.0.0
+#5 830.3 | - install mirage-crypto-pk               2.0.0
+#5 830.3 | - install mirage-crypto-rng              2.0.0
+#5 830.3 | - install mtime                          2.1.0
+#5 830.3 | - install ocaml-compiler-libs            v0.17.0
+#5 830.3 | - install ocaml-syntax-shims             1.0.0
+#5 830.3 | - install ocaml_intrinsics_kernel        v0.17.1
+#5 830.3 | - install ocamlbuild                     0.16.1
+#5 830.3 | - install ocamlfind                      1.9.8
+#5 830.3 | - install ocamlgraph                     2.2.0
+#5 830.3 | - install ocp-ocamlres                   0.4
+#5 830.3 | - install ocplib-endian                  1.2
+#5 830.3 | - install octez-alcotezt                 22.0
+#5 830.3 | - install octez-crawler                  22.0
+#5 830.3 | - install octez-distributed-internal     22.0
+#5 830.3 | - install octez-distributed-lwt-internal 22.0
+#5 830.3 | - install octez-injector                 22.0
+#5 830.3 | - install octez-internal-libs            22.0
+#5 830.3 | - install octez-libs                     22.0
+#5 830.3 | - install octez-node-config              22.0
+#5 830.3 | - install octez-performance-metrics      22.0
+#5 830.3 | - install octez-proto-libs               22.0
+#5 830.3 | - install octez-protocol-compiler        22.0
+#5 830.3 | - install octez-protocol-compiler-compat 22.0
+#5 830.3 | - install octez-riscv-api                22.0
+#5 830.3 | - install octez-riscv-pvm                22.0
+#5 830.3 | - install octez-shell-libs               22.0
+#5 830.3 | - install octez-version                  22.0
+#5 830.3 | - install ohex                           0.2.0
+#5 830.3 | - install opentelemetry                  0.10
+#5 830.3 | - install optint                         0.3.0
+#5 830.3 | - install ordering                       3.18.2
+#5 830.3 | - install pbrt                           3.1.1
+#5 830.3 | - install pp                             2.0.0
+#5 830.3 | - install pprint                         20230830
+#5 830.3 | - install ppx_assert                     v0.17.0
+#5 830.3 | - install ppx_base                       v0.17.0
+#5 830.3 | - install ppx_cold                       v0.17.0
+#5 830.3 | - install ppx_compare                    v0.17.0
+#5 830.3 | - install ppx_derivers                   1.2.1
+#5 830.3 | - install ppx_deriving                   6.0.3
+#5 830.3 | - install ppx_enumerate                  v0.17.0
+#5 830.3 | - install ppx_expect                     v0.17.2
+#5 830.3 | - install ppx_globalize                  v0.17.0
+#5 830.3 | - install ppx_hash                       v0.17.0
+#5 830.3 | - install ppx_here                       v0.17.0
+#5 830.3 | - install ppx_import                     1.11.0
+#5 830.3 | - install ppx_inline_test                v0.17.0
+#5 830.3 | - install ppx_optcomp                    v0.17.0
+#5 830.3 | - install ppx_repr                       0.7.0
+#5 830.3 | - install ppx_sexp_conv                  v0.17.0
+#5 830.3 | - install ppxlib                         0.35.0
+#5 830.3 | - install ppxlib_jane                    v0.17.0
+#5 830.3 | - install prbnmcn-basic-structures       0.0.1
+#5 830.3 | - install prbnmcn-linalg                 0.0.1
+#5 830.3 | - install prbnmcn-stats                  0.0.6
+#5 830.3 | - install pringo                         1.3
+#5 830.3 | - install progress                       0.4.0
+#5 830.3 | - install psq                            0.2.1
+#5 830.3 | - install ptime                          1.2.0
+#5 830.3 | - install pure-splitmix                  0.3
+#5 830.3 | - install pyml                           20231101
+#5 830.3 | - install qcheck-alcotest                0.25
+#5 830.3 | - install qcheck-core                    0.25
+#5 830.3 | - install re                             1.12.0
+#5 830.3 | - install repr                           0.7.0
+#5 830.3 | - install ringo                          1.1.0
+#5 830.3 | - install rresult                        0.7.0
+#5 830.3 | - install rusage                         1.0.0
+#5 830.3 | - install secp256k1-internal             0.4.0
+#5 830.3 | - install semaphore-compat               1.0.2
+#5 830.3 | - install seq                            base
+#5 830.3 | - install seqes                          0.4
+#5 830.3 | - install sexplib0                       v0.17.0
+#5 830.3 | - install sqlite3                        5.3.1
+#5 830.3 | - install stdcompat                      20.1
+#5 830.3 | - install stdint                         0.7.2
+#5 830.3 | - install stdio                          v0.17.0
+#5 830.3 | - install stdlib-random                  1.2.0
+#5 830.3 | - install stdlib-shims                   0.3.0
+#5 830.3 | - install stdune                         3.18.2
+#5 830.3 | - install stringext                      1.6.0
+#5 830.3 | - install tar                            2.6.0
+#5 830.3 | - install tar-unix                       2.6.0
+#5 830.3 | - install terminal                       0.4.0
+#5 830.3 | - install terminal_size                  0.2.0
+#5 830.3 | - install tezos-benchmark                22.0
+#5 830.3 | - install tezos-dal-node-services        22.0
+#5 830.3 | - install tezos-sapling-parameters       1.1.0
+#5 830.3 | - install tezt                           4.2.0
+#5 830.3 | - install tezt-tezos                     22.0
+#5 830.3 | - install time_now                       v0.17.0
+#5 830.3 | - install tls                            2.0.1
+#5 830.3 | - install topkg                          1.0.8
+#5 830.3 | - install uri                            4.4.0
+#5 830.3 | - install uri-sexp                       4.4.0
+#5 830.3 | - install uucp                           16.0.0
+#5 830.3 | - install uutf                           1.0.4
+#5 830.3 | - install vector                         1.0.0
+#5 830.3 | - install x509                           1.0.6
+#5 830.3 | - install yaml                           3.2.0
+#5 830.3 | - install zarith                         1.13
+#5 830.3 +- 
+#5 830.3 # Run eval $(opam env) to update the current shell environment
+#5 830.3 
+#5 830.3 The former state can be restored with:
+#5 830.3     /usr/bin/opam switch import "/home/opam/.opam/5.2/.opam-switch/backup/state-20250515140644.export"
+#5 837.5 Package tezos-micheline-rewriting does not exist, create as a NEW package? [Y/n] y
+#5 887.5 [tezos-micheline-rewriting.22.0] synchronised (git+https://gitlab.com/tezos/tezos.git#6fe3977297bb0762687ba67914aa7079c491444f)
+#5 887.5 tezos-micheline-rewriting is now pinned to git+https://gitlab.com/tezos/tezos.git#6fe3977297bb0762687ba67914aa7079c491444f (version 22.0)
+#5 887.5 
+#5 892.0 The following actions will be performed:
+#5 892.0   - install tezos-micheline-rewriting 22.0*
+#5 892.0 
+#5 892.0 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+#5 893.6 -> retrieved tezos-micheline-rewriting.22.0  (no changes)
+#5 896.2 -> installed tezos-micheline-rewriting.22.0
+#5 896.2 Done.
+#5 896.2 # Run eval $(opam env) to update the current shell environment
+#5 897.9 Package tezos-benchmark-type-inference-022-PsRiotum does not exist, create as a NEW package? [Y/n] y
+#5 901.9 [tezos-benchmark-type-inference-022-PsRiotum.22.0] synchronised (git+https://gitlab.com/tezos/tezos.git#6fe3977297bb0762687ba67914aa7079c491444f)
+#5 901.9 tezos-benchmark-type-inference-022-PsRiotum is now pinned to git+https://gitlab.com/tezos/tezos.git#6fe3977297bb0762687ba67914aa7079c491444f (version 22.0)
+#5 901.9 
+#5 906.3 The following actions will be performed:
+#5 906.3   - install octez-rustzcash-deps                        22.0  [required by tezos-protocol-022-PsRiotum]
+#5 906.3   - install tezos-protocol-022-PsRiotum                 22.0  [required by tezos-benchmark-type-inference-022-PsRiotum]
+#5 906.3   - install tezos-benchmark-type-inference-022-PsRiotum 22.0*
+#5 906.3 ===== 3 to install =====
+#5 906.3 
+#5 906.3 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+#5 919.5 -> retrieved octez-rustzcash-deps.22.0  (cached)
+#5 929.0 -> retrieved tezos-protocol-022-PsRiotum.22.0  (cached)
+#5 930.0 -> retrieved tezos-benchmark-type-inference-022-PsRiotum.22.0  (no changes)
+#5 932.1 [ERROR] The compilation of octez-rustzcash-deps.22.0 failed at "dune build -p octez-rustzcash-deps -j 255".
+#5 932.1 
+#5 932.1 #=== ERROR while compiling octez-rustzcash-deps.22.0 ==========================#
+#5 932.1 # context              2.1.6 | linux/x86_64 | ocaml-base-compiler.5.2.1 | git+https://github.com/tezos/opam-repository.git#octez-22.0
+#5 932.1 # path                 ~/.opam/5.2/.opam-switch/build/octez-rustzcash-deps.22.0
+#5 932.1 # command              ~/.opam/5.2/bin/dune build -p octez-rustzcash-deps -j 255
+#5 932.1 # exit-code            1
+#5 932.1 # env-file             ~/.opam/log/octez-rustzcash-deps-38820-d326b5.env
+#5 932.1 # output-file          ~/.opam/log/octez-rustzcash-deps-38820-d326b5.out
+#5 932.1 ### output ###
+#5 932.1 # File "src/rustzcash_deps/dune", lines 12-23, characters 0-292:
+#5 932.1 # 12 | (rule
+#5 932.1 # 13 |  (targets liboctez_rustzcash_deps.a dlloctez_rustzcash_deps.so)
+#5 932.1 # 14 |  (deps
+#5 932.1 # ....
+#5 932.1 # 21 |   (source_tree include)
+#5 932.1 # 22 |   (source_tree src))
+#5 932.1 # 23 |  (action (no-infer (bash ./build.sh))))
+#5 932.1 # (cd _build/default/src/rustzcash_deps && /bin/bash -e -u -o pipefail -c ./build.sh)
+#5 932.1 # error: output of --print=file-names missing when learning about target-specific information from rustc
+#5 932.1 # command was: `/home/opam/.rustup/toolchains/1.77.2-x86_64-unknown-linux-musl/bin/rustc - --crate-name ___ --print=file-names -Awarnings --crate-type bin --crate-type rlib --crate-type dylib --crate-type cdylib --crate-type staticlib --crate-type proc-macro --print=sysroot --print=split-debuginfo --print=crate-name --print=cfg`
+#5 932.1 # 
+#5 932.1 # --- stdout
+#5 932.1 # ___
+#5 932.1 # lib___.rlib
+#5 932.1 # lib___.a
+#5 932.1 # lib___.so
+#5 932.1 # /home/opam/.rustup/toolchains/1.77.2-x86_64-unknown-linux-musl
+#5 932.1 # off
+#5 932.1 # packed
+#5 932.1 # unpacked
+#5 932.1 # ___
+#5 932.1 # debug_assertions
+#5 932.1 # panic="unwind"
+#5 932.1 # proc_macro
+#5 932.1 # target_arch="x86_64"
+#5 932.1 # target_endian="little"
+#5 932.1 # target_env="musl"
+#5 932.1 # target_family="unix"
+#5 932.1 # target_feature="fxsr"
+#5 932.1 # target_feature="sse"
+#5 932.1 # target_feature="sse2"
+#5 932.1 # target_has_atomic="16"
+#5 932.1 # target_has_atomic="32"
+#5 932.1 # target_has_atomic="64"
+#5 932.1 # target_has_atomic="8"
+#5 932.1 # target_has_atomic="ptr"
+#5 932.1 # target_os="linux"
+#5 932.1 # target_pointer_width="64"
+#5 932.1 # target_vendor="unknown"
+#5 932.1 # unix
+#5 932.1 # 
+#5 932.1 
+#5 932.1 
+#5 932.1 
+#5 932.1 <><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+#5 932.1 +- The following actions failed
+#5 932.1 | - build octez-rustzcash-deps 22.0
+#5 932.1 +- 
+#5 932.1 - No changes have been performed
+#5 932.1 # Run eval $(opam env) to update the current shell environment
+#5 932.1 [NOTE] Pinning command successful, but your installed packages may be out of sync.
+#5 936.4 Package tezos-benchmark-022-PsRiotum does not exist, create as a NEW package? [Y/n] y
+#5 941.0 [tezos-benchmark-022-PsRiotum.22.0] synchronised (git+https://gitlab.com/tezos/tezos.git#6fe3977297bb0762687ba67914aa7079c491444f)
+#5 941.0 tezos-benchmark-022-PsRiotum is now pinned to git+https://gitlab.com/tezos/tezos.git#6fe3977297bb0762687ba67914aa7079c491444f (version 22.0)
+#5 941.0 
+#5 945.5 The following actions will be performed:
+#5 945.5   - install octez-rust-deps                             22.0  [required by octez-l2-libs]
+#5 945.5   - install octez-rustzcash-deps                        22.0  [required by tezos-protocol-022-PsRiotum]
+#5 945.5   - install octez-l2-libs                               22.0  [required by octez-protocol-022-PsRiotum-libs]
+#5 945.5   - install tezos-protocol-022-PsRiotum                 22.0  [required by tezos-benchmark-022-PsRiotum]
+#5 945.5   - install tezos-dal-node-lib                          22.0  [required by octez-protocol-022-PsRiotum-libs]
+#5 945.5   - install tezos-benchmark-type-inference-022-PsRiotum 22.0* [required by tezos-benchmark-022-PsRiotum]
+#5 945.5   - install octez-protocol-022-PsRiotum-libs            22.0  [required by tezos-benchmark-022-PsRiotum]
+#5 945.5   - install tezos-benchmark-022-PsRiotum                22.0*
+#5 945.5 ===== 8 to install =====
+#5 945.5 
+#5 945.5 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+#5 964.5 -> retrieved octez-l2-libs.22.0  (cached)
+#5 972.0 -> retrieved octez-protocol-022-PsRiotum-libs.22.0  (cached)
+#5 973.7 -> retrieved octez-rust-deps.22.0  (cached)
+#5 983.1 -> retrieved octez-rustzcash-deps.22.0  (cached)
+#5 998.1 -> retrieved tezos-dal-node-lib.22.0  (cached)
+#5 1004.4 [ERROR] The compilation of octez-rust-deps.22.0 failed at "dune build -p octez-rust-deps -j 255".
+#5 1004.4 [ERROR] The compilation of octez-rustzcash-deps.22.0 failed at "dune build -p octez-rustzcash-deps -j 255".
+#5 1004.4 -> retrieved tezos-benchmark-022-PsRiotum.22.0  (no changes)
+#5 1006.7 -> retrieved tezos-benchmark-type-inference-022-PsRiotum.22.0  (no changes)
+#5 1011.6 -> retrieved tezos-protocol-022-PsRiotum.22.0  (cached)
+#5 1011.6 
+#5 1011.6 #=== ERROR while compiling octez-rustzcash-deps.22.0 ==========================#
+#5 1011.6 # context              2.1.6 | linux/x86_64 | ocaml-base-compiler.5.2.1 | git+https://github.com/tezos/opam-repository.git#octez-22.0
+#5 1011.6 # path                 ~/.opam/5.2/.opam-switch/build/octez-rustzcash-deps.22.0
+#5 1011.6 # command              ~/.opam/5.2/bin/dune build -p octez-rustzcash-deps -j 255
+#5 1011.6 # exit-code            1
+#5 1011.6 # env-file             ~/.opam/log/octez-rustzcash-deps-38936-5dfacc.env
+#5 1011.6 # output-file          ~/.opam/log/octez-rustzcash-deps-38936-5dfacc.out
+#5 1011.6 ### output ###
+#5 1011.6 # File "src/rustzcash_deps/dune", lines 12-23, characters 0-292:
+#5 1011.6 # 12 | (rule
+#5 1011.6 # 13 |  (targets liboctez_rustzcash_deps.a dlloctez_rustzcash_deps.so)
+#5 1011.6 # 14 |  (deps
+#5 1011.6 # ....
+#5 1011.6 # 21 |   (source_tree include)
+#5 1011.6 # 22 |   (source_tree src))
+#5 1011.6 # 23 |  (action (no-infer (bash ./build.sh))))
+#5 1011.6 # (cd _build/default/src/rustzcash_deps && /bin/bash -e -u -o pipefail -c ./build.sh)
+#5 1011.6 # error: output of --print=file-names missing when learning about target-specific information from rustc
+#5 1011.6 # command was: `/home/opam/.rustup/toolchains/1.77.2-x86_64-unknown-linux-musl/bin/rustc - --crate-name ___ --print=file-names -Awarnings --crate-type bin --crate-type rlib --crate-type dylib --crate-type cdylib --crate-type staticlib --crate-type proc-macro --print=sysroot --print=split-debuginfo --print=crate-name --print=cfg`
+#5 1011.6 # 
+#5 1011.6 # --- stdout
+#5 1011.6 # ___
+#5 1011.6 # lib___.rlib
+#5 1011.6 # lib___.a
+#5 1011.6 # lib___.so
+#5 1011.6 # /home/opam/.rustup/toolchains/1.77.2-x86_64-unknown-linux-musl
+#5 1011.6 # off
+#5 1011.6 # packed
+#5 1011.6 # unpacked
+#5 1011.6 # ___
+#5 1011.6 # debug_assertions
+#5 1011.6 # panic="unwind"
+#5 1011.6 # proc_macro
+#5 1011.6 # target_arch="x86_64"
+#5 1011.6 # target_endian="little"
+#5 1011.6 # target_env="musl"
+#5 1011.6 # target_family="unix"
+#5 1011.6 # target_feature="fxsr"
+#5 1011.6 # target_feature="sse"
+#5 1011.6 # target_feature="sse2"
+#5 1011.6 # target_has_atomic="16"
+#5 1011.6 # target_has_atomic="32"
+#5 1011.6 # target_has_atomic="64"
+#5 1011.6 # target_has_atomic="8"
+#5 1011.6 # target_has_atomic="ptr"
+#5 1011.6 # target_os="linux"
+#5 1011.6 # target_pointer_width="64"
+#5 1011.6 # target_vendor="unknown"
+#5 1011.6 # unix
+#5 1011.6 # 
+#5 1011.6 
+#5 1011.6 
+#5 1011.6 #=== ERROR while compiling octez-rust-deps.22.0 ===============================#
+#5 1011.6 # context              2.1.6 | linux/x86_64 | ocaml-base-compiler.5.2.1 | git+https://github.com/tezos/opam-repository.git#octez-22.0
+#5 1011.6 # path                 ~/.opam/5.2/.opam-switch/build/octez-rust-deps.22.0
+#5 1011.6 # command              ~/.opam/5.2/bin/dune build -p octez-rust-deps -j 255
+#5 1011.6 # exit-code            1
+#5 1011.6 # env-file             ~/.opam/log/octez-rust-deps-38936-0fb886.env
+#5 1011.6 # output-file          ~/.opam/log/octez-rust-deps-38936-0fb886.out
+#5 1011.6 ### output ###
+#5 1011.6 # File "src/rust_deps/dune", lines 12-26, characters 0-403:
+#5 1011.6 # 12 | (rule
+#5 1011.6 # 13 |  (targets liboctez_rust_deps.a dlloctez_rust_deps.so wasmer.h wasm.h)
+#5 1011.6 # 14 |  (deps
+#5 1011.6 # ....
+#5 1011.6 # 24 |   (source_tree ../kernel_sdk)
+#5 1011.6 # 25 |   (source_tree ../../sdk/rust))
+#5 1011.6 # 26 |  (action (no-infer (bash ./build.sh))))
+#5 1011.6 # (cd _build/default/src/rust_deps && /bin/bash -e -u -o pipefail -c ./build.sh)
+#5 1011.6 # error: output of --print=file-names missing when learning about target-specific information from rustc
+#5 1011.6 # command was: `/home/opam/.rustup/toolchains/1.77.2-x86_64-unknown-linux-musl/bin/rustc - --crate-name ___ --print=file-names -Awarnings --crate-type bin --crate-type rlib --crate-type dylib --crate-type cdylib --crate-type staticlib --crate-type proc-macro --print=sysroot --print=split-debuginfo --print=crate-name --print=cfg`
+#5 1011.6 # 
+#5 1011.6 # --- stdout
+#5 1011.6 # ___
+#5 1011.6 # lib___.rlib
+#5 1011.6 # lib___.a
+#5 1011.6 # lib___.so
+#5 1011.6 # /home/opam/.rustup/toolchains/1.77.2-x86_64-unknown-linux-musl
+#5 1011.6 # off
+#5 1011.6 # packed
+#5 1011.6 # unpacked
+#5 1011.6 # ___
+#5 1011.6 # debug_assertions
+#5 1011.6 # panic="unwind"
+#5 1011.6 # proc_macro
+#5 1011.6 # target_arch="x86_64"
+#5 1011.6 # target_endian="little"
+#5 1011.6 # target_env="musl"
+#5 1011.6 # target_family="unix"
+#5 1011.6 # target_feature="fxsr"
+#5 1011.6 # target_feature="sse"
+#5 1011.6 # target_feature="sse2"
+#5 1011.6 # target_has_atomic="16"
+#5 1011.6 # target_has_atomic="32"
+#5 1011.6 # target_has_atomic="64"
+#5 1011.6 # target_has_atomic="8"
+#5 1011.6 # target_has_atomic="ptr"
+#5 1011.6 # target_os="linux"
+#5 1011.6 # target_pointer_width="64"
+#5 1011.6 # target_vendor="unknown"
+#5 1011.6 # unix
+#5 1011.6 # 
+#5 1011.6 
+#5 1011.6 
+#5 1011.6 
+#5 1011.6 <><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+#5 1011.6 +- The following actions failed
+#5 1011.6 | - build octez-rust-deps      22.0
+#5 1011.6 | - build octez-rustzcash-deps 22.0
+#5 1011.6 +- 
+#5 1011.6 - No changes have been performed
+#5 1011.6 # Run eval $(opam env) to update the current shell environment
+#5 1011.6 [NOTE] Pinning command successful, but your installed packages may be out of sync.
+#5 1015.3 Package tezos-benchmarks-proto-022-PsRiotum does not exist, create as a NEW package? [Y/n] y
+#5 1020.4 [tezos-benchmarks-proto-022-PsRiotum.22.0] synchronised (git+https://gitlab.com/tezos/tezos.git#6fe3977297bb0762687ba67914aa7079c491444f)
+#5 1020.4 tezos-benchmarks-proto-022-PsRiotum is now pinned to git+https://gitlab.com/tezos/tezos.git#6fe3977297bb0762687ba67914aa7079c491444f (version 22.0)
+#5 1020.4 
+#5 1026.6 The following actions will be performed:
+#5 1026.6   - install octez-rust-deps                             22.0  [required by octez-l2-libs]
+#5 1026.6   - install octez-rustzcash-deps                        22.0  [required by tezos-protocol-022-PsRiotum]
+#5 1026.6   - install octez-l2-libs                               22.0  [required by octez-protocol-022-PsRiotum-libs]
+#5 1026.6   - install tezos-protocol-022-PsRiotum                 22.0  [required by tezos-benchmarks-proto-022-PsRiotum]
+#5 1026.6   - install tezos-dal-node-lib                          22.0  [required by octez-protocol-022-PsRiotum-libs]
+#5 1026.6   - install tezos-benchmark-type-inference-022-PsRiotum 22.0* [required by tezos-benchmarks-proto-022-PsRiotum]
+#5 1026.6   - install octez-protocol-022-PsRiotum-libs            22.0  [required by tezos-benchmarks-proto-022-PsRiotum]
+#5 1026.6   - install tezos-benchmark-022-PsRiotum                22.0* [required by tezos-benchmarks-proto-022-PsRiotum]
+#5 1026.6   - install tezos-benchmarks-proto-022-PsRiotum         22.0*
+#5 1026.6 ===== 9 to install =====
+#5 1026.6 
+#5 1026.6 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+#5 1043.6 -> retrieved octez-l2-libs.22.0  (cached)
+#5 1050.1 -> retrieved octez-protocol-022-PsRiotum-libs.22.0  (cached)
+#5 1051.7 -> retrieved octez-rust-deps.22.0  (cached)
+#5 1058.7 -> retrieved octez-rustzcash-deps.22.0  (cached)
+#5 1062.4 -> retrieved tezos-benchmarks-proto-022-PsRiotum.22.0  (no changes)
+#5 1067.6 [ERROR] The compilation of octez-rust-deps.22.0 failed at "dune build -p octez-rust-deps -j 255".
+#5 1067.6 [ERROR] The compilation of octez-rustzcash-deps.22.0 failed at "dune build -p octez-rustzcash-deps -j 255".
+#5 1069.8 -> retrieved tezos-benchmark-type-inference-022-PsRiotum.22.0  (no changes)
+#5 1077.5 -> retrieved tezos-dal-node-lib.22.0  (cached)
+#5 1077.5 -> retrieved tezos-benchmark-022-PsRiotum.22.0  (no changes)
+#5 1079.4 -> retrieved tezos-protocol-022-PsRiotum.22.0  (cached)
+#5 1079.4 
+#5 1079.4 #=== ERROR while compiling octez-rustzcash-deps.22.0 ==========================#
+#5 1079.4 # context              2.1.6 | linux/x86_64 | ocaml-base-compiler.5.2.1 | git+https://github.com/tezos/opam-repository.git#octez-22.0
+#5 1079.4 # path                 ~/.opam/5.2/.opam-switch/build/octez-rustzcash-deps.22.0
+#5 1079.4 # command              ~/.opam/5.2/bin/dune build -p octez-rustzcash-deps -j 255
+#5 1079.4 # exit-code            1
+#5 1079.4 # env-file             ~/.opam/log/octez-rustzcash-deps-39149-caa82d.env
+#5 1079.4 # output-file          ~/.opam/log/octez-rustzcash-deps-39149-caa82d.out
+#5 1079.4 ### output ###
+#5 1079.4 # File "src/rustzcash_deps/dune", lines 12-23, characters 0-292:
+#5 1079.4 # 12 | (rule
+#5 1079.4 # 13 |  (targets liboctez_rustzcash_deps.a dlloctez_rustzcash_deps.so)
+#5 1079.4 # 14 |  (deps
+#5 1079.4 # ....
+#5 1079.4 # 21 |   (source_tree include)
+#5 1079.4 # 22 |   (source_tree src))
+#5 1079.4 # 23 |  (action (no-infer (bash ./build.sh))))
+#5 1079.4 # (cd _build/default/src/rustzcash_deps && /bin/bash -e -u -o pipefail -c ./build.sh)
+#5 1079.4 # error: output of --print=file-names missing when learning about target-specific information from rustc
+#5 1079.4 # command was: `/home/opam/.rustup/toolchains/1.77.2-x86_64-unknown-linux-musl/bin/rustc - --crate-name ___ --print=file-names -Awarnings --crate-type bin --crate-type rlib --crate-type dylib --crate-type cdylib --crate-type staticlib --crate-type proc-macro --print=sysroot --print=split-debuginfo --print=crate-name --print=cfg`
+#5 1079.4 # 
+#5 1079.4 # --- stdout
+#5 1079.4 # ___
+#5 1079.4 # lib___.rlib
+#5 1079.4 # lib___.a
+#5 1079.4 # lib___.so
+#5 1079.4 # /home/opam/.rustup/toolchains/1.77.2-x86_64-unknown-linux-musl
+#5 1079.4 # off
+#5 1079.4 # packed
+#5 1079.4 # unpacked
+#5 1079.4 # ___
+#5 1079.4 # debug_assertions
+#5 1079.4 # panic="unwind"
+#5 1079.4 # proc_macro
+#5 1079.4 # target_arch="x86_64"
+#5 1079.4 # target_endian="little"
+#5 1079.4 # target_env="musl"
+#5 1079.4 # target_family="unix"
+#5 1079.4 # target_feature="fxsr"
+#5 1079.4 # target_feature="sse"
+#5 1079.4 # target_feature="sse2"
+#5 1079.4 # target_has_atomic="16"
+#5 1079.4 # target_has_atomic="32"
+#5 1079.4 # target_has_atomic="64"
+#5 1079.4 # target_has_atomic="8"
+#5 1079.4 # target_has_atomic="ptr"
+#5 1079.4 # target_os="linux"
+#5 1079.4 # target_pointer_width="64"
+#5 1079.4 # target_vendor="unknown"
+#5 1079.4 # unix
+#5 1079.4 # 
+#5 1079.4 
+#5 1079.4 
+#5 1079.4 #=== ERROR while compiling octez-rust-deps.22.0 ===============================#
+#5 1079.4 # context              2.1.6 | linux/x86_64 | ocaml-base-compiler.5.2.1 | git+https://github.com/tezos/opam-repository.git#octez-22.0
+#5 1079.4 # path                 ~/.opam/5.2/.opam-switch/build/octez-rust-deps.22.0
+#5 1079.4 # command              ~/.opam/5.2/bin/dune build -p octez-rust-deps -j 255
+#5 1079.4 # exit-code            1
+#5 1079.4 # env-file             ~/.opam/log/octez-rust-deps-39149-6375d6.env
+#5 1079.4 # output-file          ~/.opam/log/octez-rust-deps-39149-6375d6.out
+#5 1079.4 ### output ###
+#5 1079.4 # File "src/rust_deps/dune", lines 12-26, characters 0-403:
+#5 1079.4 # 12 | (rule
+#5 1079.4 # 13 |  (targets liboctez_rust_deps.a dlloctez_rust_deps.so wasmer.h wasm.h)
+#5 1079.4 # 14 |  (deps
+#5 1079.4 # ....
+#5 1079.4 # 24 |   (source_tree ../kernel_sdk)
+#5 1079.4 # 25 |   (source_tree ../../sdk/rust))
+#5 1079.4 # 26 |  (action (no-infer (bash ./build.sh))))
+#5 1079.4 # (cd _build/default/src/rust_deps && /bin/bash -e -u -o pipefail -c ./build.sh)
+#5 1079.4 # error: output of --print=file-names missing when learning about target-specific information from rustc
+#5 1079.4 # command was: `/home/opam/.rustup/toolchains/1.77.2-x86_64-unknown-linux-musl/bin/rustc - --crate-name ___ --print=file-names -Awarnings --crate-type bin --crate-type rlib --crate-type dylib --crate-type cdylib --crate-type staticlib --crate-type proc-macro --print=sysroot --print=split-debuginfo --print=crate-name --print=cfg`
+#5 1079.4 # 
+#5 1079.4 # --- stdout
+#5 1079.4 # ___
+#5 1079.4 # lib___.rlib
+#5 1079.4 # lib___.a
+#5 1079.4 # lib___.so
+#5 1079.4 # /home/opam/.rustup/toolchains/1.77.2-x86_64-unknown-linux-musl
+#5 1079.4 # off
+#5 1079.4 # packed
+#5 1079.4 # unpacked
+#5 1079.4 # ___
+#5 1079.4 # debug_assertions
+#5 1079.4 # panic="unwind"
+#5 1079.4 # proc_macro
+#5 1079.4 # target_arch="x86_64"
+#5 1079.4 # target_endian="little"
+#5 1079.4 # target_env="musl"
+#5 1079.4 # target_family="unix"
+#5 1079.4 # target_feature="fxsr"
+#5 1079.4 # target_feature="sse"
+#5 1079.4 # target_feature="sse2"
+#5 1079.4 # target_has_atomic="16"
+#5 1079.4 # target_has_atomic="32"
+#5 1079.4 # target_has_atomic="64"
+#5 1079.4 # target_has_atomic="8"
+#5 1079.4 # target_has_atomic="ptr"
+#5 1079.4 # target_os="linux"
+#5 1079.4 # target_pointer_width="64"
+#5 1079.4 # target_vendor="unknown"
+#5 1079.4 # unix
+#5 1079.4 # 
+#5 1079.4 
+#5 1079.4 
+#5 1079.4 
+#5 1079.4 <><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+#5 1079.4 +- The following actions failed
+#5 1079.4 | - build octez-rust-deps      22.0
+#5 1079.4 | - build octez-rustzcash-deps 22.0
+#5 1079.4 +- 
+#5 1079.4 - No changes have been performed
+#5 1079.4 [NOTE] Pinning command successful, but your installed packages may be out of sync.
+#5 1079.4 # Run eval $(opam env) to update the current shell environment
+#5 DONE 1528.2s
+
+#6 exporting to image
+#6 exporting layers
+#6 exporting layers 9.6s done
+#6 writing image sha256:b4c37cb4ccc3947c1243e46dc6df51043f3196b55807f14559283c57ee7767c2 done
+#6 naming to docker.io/library/ledger-app-tezos-ocaml 0.0s done
+#6 DONE 9.6s

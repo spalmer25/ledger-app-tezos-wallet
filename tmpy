@@ -1,0 +1,59 @@
+from contextlib import contextmanager
+from multiprocessing.pool import ThreadPool
+import time
+from typing import Callable, Optional, Any
+
+class SendAndNavigateContext:
+    def __init__(self):
+        self.result = None  # To store the result of the send operation
+
+@contextmanager
+def send_and_navigate(
+    send: Callable[[], Any],
+    timeout: Optional[float] = 300.0
+) -> SendAndNavigateContext:
+    """
+    Context manager that sends a request in parallel with navigation and 
+    allows the result of the send operation to be accessed after the block.
+    """
+    ctx = SendAndNavigateContext()
+    
+    with ThreadPool(processes=1) as pool:
+        send_res = pool.apply_async(send)
+
+        try:
+            yield ctx  # Provide the context to the `with` block
+            
+            t = 0.0
+            while not send_res.ready():
+                time.sleep(0.1)
+                t += 0.1
+                if timeout is not None and t >= timeout:
+                    raise TimeoutError("Timeout waiting for Send operation to complete.")
+            
+            # Store the result from send in the context object
+            ctx.result = send_res.get()
+        finally:
+            # Clean up any running threads if needed
+            if not send_res.ready():
+                send_res.wait(timeout=0.1)
+
+import time
+
+def send_request() -> str:
+    print("Sending request...")
+    time.sleep(2)  # Simulate sending request delay
+    print("Request sent.")
+    return "Response from server"
+
+def navigate_to_page() -> None:
+    print("Navigating to page...")
+    time.sleep(3)  # Simulate navigation delay
+    print("Navigation completed.")
+
+# Use the send_and_navigate function as a context manager
+with send_and_navigate(send=send_request, timeout=10.0) as ctx:
+    navigate_to_page()
+
+# Access the result of the send operation
+print(f"Result: {ctx.result}")

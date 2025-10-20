@@ -1,0 +1,11 @@
+Appendix A Summary of guidelines
+Rule 8.2 Required
+Function types shall be in prototype form with named parameters
+Rule 7.2 Required
+A "u" or "U" suffix shall be applied to all integer constants that are represented in an unsigned type
+Rule 12.1 Required
+The precedence of operators within expressions should be made explicit
+Rule 13.4 Required
+The result of an assignment operator should not be used
+Rule 15.6 Required
+The body of an iteration-statement or a selection-statement shall be a compound-statement

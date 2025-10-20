@@ -1,0 +1,597 @@
+
+File "tests/generate/dune", line 2, characters 14-22:
+2 |         (name generate)
+                  ^^^^^^^^
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(anemoi.o): in function `anemoi_fr_multiply_by_g':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:48:(.text+0x12c): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:50:(.text+0x13a): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:52:(.text+0x148): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:54:(.text+0x156): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(anemoi.o): in function `anemoi_apply_constants_addition':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:67:(.text+0x1f8): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(anemoi.o):/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:68: more undefined references to `blst_fr_add' follow
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(anemoi.o): in function `anemoi_addchain_alpha_inv':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:209:(.text+0x711): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:212:(.text+0x71c): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:215:(.text+0x72f): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:218:(.text+0x747): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:221:(.text+0x75a): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:224:(.text+0x778): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:227:(.text+0x793): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:230:(.text+0x7ae): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:233:(.text+0x7c1): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:236:(.text+0x7e6): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(anemoi.o):/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:239: more undefined references to `blst_fr_mul' follow
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(anemoi.o): in function `anemoi_addchain_alpha_inv':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:278:(.text+0x947): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:283:(.text+0x95f): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:288:(.text+0x96f): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:293:(.text+0x987): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:298:(.text+0x997): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:303:(.text+0x9b9): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:308:(.text+0x9c7): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:312:(.text+0x9e1): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:316:(.text+0x9ef): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:320:(.text+0xa07): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:327:(.text+0xa3f): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:331:(.text+0xa57): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:335:(.text+0xa67): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:339:(.text+0xa81): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:343:(.text+0xa8f): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:349:(.text+0xaaf): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:353:(.text+0xabf): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:357:(.text+0xad7): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:361:(.text+0xae7): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:365:(.text+0xaff): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:371:(.text+0xb37): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:375:(.text+0xb51): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:379:(.text+0xb5f): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:383:(.text+0xb79): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:387:(.text+0xb87): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:393:(.text+0xba9): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:397:(.text+0xbb7): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:401:(.text+0xbcf): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:405:(.text+0xbdf): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:409:(.text+0xc02): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:415:(.text+0xc37): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:419:(.text+0xc53): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:423:(.text+0xc5e): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:423:(.text+0xc69): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:423:(.text+0xc74): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:427:(.text+0xc84): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:431:(.text+0xc97): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:437:(.text+0xcba): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:441:(.text+0xcc7): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:445:(.text+0xce1): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:449:(.text+0xcef): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:453:(.text+0xd0c): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:457:(.text+0xd1d): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:460:(.text+0xd2d): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:463:(.text+0xd3f): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:466:(.text+0xd5b): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:469:(.text+0xd67): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:472:(.text+0xd8a): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:475:(.text+0xd97): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:478:(.text+0xdb0): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:481:(.text+0xdbf): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:484:(.text+0xdd7): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:490:(.text+0xe0f): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:493:(.text+0xe29): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:496:(.text+0xe37): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:499:(.text+0xe4f): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:502:(.text+0xe5f): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:507:(.text+0xe81): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:510:(.text+0xe8f): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:513:(.text+0xea9): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:516:(.text+0xeb7): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:519:(.text+0xed0): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:525:(.text+0xf07): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:528:(.text+0xf1f): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:531:(.text+0xf2f): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:534:(.text+0xf49): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:537:(.text+0xf57): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:542:(.text+0xf78): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:546:(.text+0xf87): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:549:(.text+0xfa1): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:552:(.text+0xfaf): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:555:(.text+0xfc8): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:558:(.text+0xfd7): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:561:(.text+0xfee): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(anemoi.o): in function `anemoi_apply_s_box':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:568:(.text+0x1053): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:570:(.text+0x1061): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:572:(.text+0x106f): undefined reference to `blst_fr_sub'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:584:(.text+0x1088): undefined reference to `blst_fr_sub'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:587:(.text+0x1093): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:589:(.text+0x10a1): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:591:(.text+0x10af): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:593:(.text+0x10bd): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(anemoi.o): in function `anemoi_generic_apply_linear_layer':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:640:(.text+0x132d): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:641:(.text+0x133c): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:663:(.text+0x14a5): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:664:(.text+0x14b4): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(anemoi.o): in function `blst_fr_double':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/anemoi.c:57:(.text+0x188): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(rescue.o): in function `marvellous_apply_nonlinear_alpha':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:33:(.text+0xab): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:34:(.text+0xb6): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:35:(.text+0xc4): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(rescue.o): in function `marvellous_apply_nonlinear_alphainv_addchain':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:47:(.text+0x161): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:50:(.text+0x16c): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:53:(.text+0x17f): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:56:(.text+0x197): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:59:(.text+0x1aa): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:62:(.text+0x1c8): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:65:(.text+0x1e3): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:68:(.text+0x1fe): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:71:(.text+0x211): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:74:(.text+0x236): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(rescue.o):/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:77: more undefined references to `blst_fr_mul' follow
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(rescue.o): in function `marvellous_apply_nonlinear_alphainv_addchain':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:116:(.text+0x397): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:121:(.text+0x3af): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:126:(.text+0x3bf): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:131:(.text+0x3d7): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:136:(.text+0x3e7): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:141:(.text+0x409): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:146:(.text+0x417): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:150:(.text+0x431): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:154:(.text+0x43f): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:158:(.text+0x457): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:165:(.text+0x48f): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:169:(.text+0x4a7): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:173:(.text+0x4b7): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:177:(.text+0x4d1): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:181:(.text+0x4df): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:187:(.text+0x4ff): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:191:(.text+0x50f): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:195:(.text+0x527): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:199:(.text+0x537): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:203:(.text+0x54f): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:209:(.text+0x587): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:213:(.text+0x5a1): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:217:(.text+0x5af): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:221:(.text+0x5c9): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:225:(.text+0x5d7): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:231:(.text+0x5f9): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:235:(.text+0x607): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:239:(.text+0x61f): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:243:(.text+0x62f): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:247:(.text+0x652): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:253:(.text+0x687): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:257:(.text+0x6a3): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:261:(.text+0x6ae): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:261:(.text+0x6b9): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:261:(.text+0x6c4): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:265:(.text+0x6d4): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:269:(.text+0x6e7): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:275:(.text+0x70a): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:279:(.text+0x717): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:283:(.text+0x731): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:287:(.text+0x73f): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:291:(.text+0x75c): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:295:(.text+0x76d): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:298:(.text+0x77d): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:301:(.text+0x78f): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:304:(.text+0x7ab): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:307:(.text+0x7b7): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:310:(.text+0x7da): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:313:(.text+0x7e7): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:316:(.text+0x800): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:319:(.text+0x80f): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:322:(.text+0x827): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:328:(.text+0x85f): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:331:(.text+0x879): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:334:(.text+0x887): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:337:(.text+0x89f): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:340:(.text+0x8af): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:345:(.text+0x8d1): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:348:(.text+0x8df): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:351:(.text+0x8f9): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:354:(.text+0x907): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:357:(.text+0x920): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:363:(.text+0x957): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:366:(.text+0x96f): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:369:(.text+0x97f): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:372:(.text+0x999): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:375:(.text+0x9a7): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:380:(.text+0x9c8): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:384:(.text+0x9d7): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:387:(.text+0x9f1): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:390:(.text+0x9ff): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:393:(.text+0xa18): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:396:(.text+0xa27): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:399:(.text+0xa3e): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(rescue.o): in function `marvellous_apply_linear':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:419:(.text+0xb73): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:421:(.text+0xbad): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:422:(.text+0xbbc): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(rescue.o): in function `marvellous_apply_cst':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/rescue.c:435:(.text+0xc9d): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(poseidon.o): in function `poseidon_apply_sbox':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:54:(.text+0x107): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:55:(.text+0x112): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:56:(.text+0x120): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(poseidon.o): in function `poseidon_apply_matrix_multiplication':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:71:(.text+0x261): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:72:(.text+0x26f): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:69:(.text+0x291): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(poseidon.o): in function `poseidon_apply_cst':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:86:(.text+0x381): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(poseidon.o): in function `poseidon_apply_batched_partial_round':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:106:(.text+0x4fe): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:107:(.text+0x509): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:108:(.text+0x517): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:114:(.text+0x56a): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:117:(.text+0x5a1): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:118:(.text+0x5af): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:122:(.text+0x5e1): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:126:(.text+0x5ec): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:127:(.text+0x5f7): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:128:(.text+0x605): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:134:(.text+0x681): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:136:(.text+0x6bd): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:137:(.text+0x6cb): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:139:(.text+0x6fc): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:106:(.text+0x763): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:107:(.text+0x76e): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/poseidon.c:108:(.text+0x77c): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-hash/libbls12_381_hash_stubs.a(griffin.o): in function `griffin_addchain_alpha_inv':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/griffin.c:44:(.text+0x141): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/griffin.c:47:(.text+0x14c): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_hash/griffin.c:50:(.text+0x15f): undefined reference to `blst_fr_mul'
+...TRUNCATED BY DUNE...
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/tezos-sapling/libtezos_sapling_stubs.a(rustzcash_ctypes_c_stubs.o): in function `_27_librustzcash_sapling_check_output':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_sapling/rustzcash_ctypes_c_stubs.c:362:(.text+0xafe): undefined reference to `librustzcash_sapling_check_output'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/tezos-sapling/libtezos_sapling_stubs.a(rustzcash_ctypes_c_stubs.o): in function `_28_librustzcash_sapling_final_check':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_sapling/rustzcash_ctypes_c_stubs.c:372:(.text+0xb58): undefined reference to `librustzcash_sapling_final_check'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-signature/libbls12_381_signature_stubs.a(blst_bindings_stubs.o): in function `finalize_free_pairing':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_signature/blst_bindings_stubs.c:36:(.text+0xd): undefined reference to `blst_pairing_get_dst'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-signature/libbls12_381_signature_stubs.a(blst_bindings_stubs.o): in function `caml_bls12_381_signature_blst_pairing_init_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_signature/blst_bindings_stubs.c:67:(.text+0x141): undefined reference to `blst_pairing_sizeof'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_signature/blst_bindings_stubs.c:73:(.text+0x161): undefined reference to `blst_pairing_sizeof'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_signature/blst_bindings_stubs.c:78:(.text+0x1a3): undefined reference to `blst_pairing_init'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-signature/libbls12_381_signature_stubs.a(blst_bindings_stubs.o): in function `caml_bls12_381_signature_blst_pairing_commit_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_signature/blst_bindings_stubs.c:86:(.text+0x270): undefined reference to `blst_pairing_commit'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-signature/libbls12_381_signature_stubs.a(blst_bindings_stubs.o): in function `caml_bls12_381_signature_blst_pairing_finalverify_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_signature/blst_bindings_stubs.c:93:(.text+0x322): undefined reference to `blst_pairing_finalverify'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-signature/libbls12_381_signature_stubs.a(blst_bindings_stubs.o): in function `caml_bls12_381_signature_blst_signature_keygen_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_signature/blst_bindings_stubs.c:101:(.text+0x46b): undefined reference to `blst_keygen'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-signature/libbls12_381_signature_stubs.a(blst_bindings_stubs.o): in function `caml_bls12_381_signature_blst_sk_to_pk_in_g1_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_signature/blst_bindings_stubs.c:111:(.text+0x54a): undefined reference to `blst_sk_to_pk_in_g1'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-signature/libbls12_381_signature_stubs.a(blst_bindings_stubs.o): in function `caml_bls12_381_signature_blst_sign_pk_in_g1_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_signature/blst_bindings_stubs.c:119:(.text+0x649): undefined reference to `blst_sign_pk_in_g1'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-signature/libbls12_381_signature_stubs.a(blst_bindings_stubs.o): in function `caml_bls12_381_signature_blst_aggregate_signature_pk_in_g1_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_signature/blst_bindings_stubs.c:128:(.text+0x7fc): undefined reference to `blst_pairing_aggregate_pk_in_g1'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-signature/libbls12_381_signature_stubs.a(blst_bindings_stubs.o): in function `caml_bls12_381_signature_blst_pairing_chk_n_mul_n_aggr_pk_in_g1_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_signature/blst_bindings_stubs.c:160:(.text+0xaa6): undefined reference to `blst_pairing_chk_n_mul_n_aggr_pk_in_g1'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-signature/libbls12_381_signature_stubs.a(blst_bindings_stubs.o): in function `caml_bls12_381_signature_blst_sk_to_pk_in_g2_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_signature/blst_bindings_stubs.c:184:(.text+0xbda): undefined reference to `blst_sk_to_pk_in_g2'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-signature/libbls12_381_signature_stubs.a(blst_bindings_stubs.o): in function `caml_bls12_381_signature_blst_sign_pk_in_g2_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_signature/blst_bindings_stubs.c:192:(.text+0xcd9): undefined reference to `blst_sign_pk_in_g2'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-signature/libbls12_381_signature_stubs.a(blst_bindings_stubs.o): in function `caml_bls12_381_signature_blst_aggregate_signature_pk_in_g2_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_signature/blst_bindings_stubs.c:201:(.text+0xe8c): undefined reference to `blst_pairing_aggregate_pk_in_g2'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/octez-libs/bls12-381-signature/libbls12_381_signature_stubs.a(blst_bindings_stubs.o): in function `caml_bls12_381_signature_blst_pairing_chk_n_mul_n_aggr_pk_in_g2_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/octez-libs.22.0/_build/default/src/lib_bls12_381_signature/blst_bindings_stubs.c:233:(.text+0x1136): undefined reference to `blst_pairing_chk_n_mul_n_aggr_pk_in_g2'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o): in function `blst_fr_compare':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:14:(.text+0x44): undefined reference to `blst_uint64_from_fr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:15:(.text+0x51): undefined reference to `blst_uint64_from_fr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o): in function `blst_fr_from_lendian':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:36:(.text+0x136): undefined reference to `blst_scalar_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:37:(.text+0x13e): undefined reference to `blst_scalar_fr_check'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:39:(.text+0x16f): undefined reference to `blst_fr_from_scalar'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o): in function `blst_lendian_from_fr':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:46:(.text+0x1a4): undefined reference to `blst_scalar_from_fr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:47:(.text+0x1af): undefined reference to `blst_lendian_from_scalar'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o): in function `blst_fr_pow':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:57:(.text+0x1f5): undefined reference to `blst_fr_is_zero'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:57:(.text+0x205): undefined reference to `blst_fr_is_one'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:74:(.text+0x25c): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:76:(.text+0x281): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:53:(.text+0x2c1): undefined reference to `blst_fr_set_to_one'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o): in function `blst_fp2_zero':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:98:(.text+0x376): undefined reference to `blst_fp_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:99:(.text+0x382): undefined reference to `blst_fp_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o): in function `blst_fp2_set_to_one':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:104:(.text+0x3e6): undefined reference to `blst_fp_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:106:(.text+0x3f6): undefined reference to `blst_fp_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o): in function `blst_fp2_of_bytes_components':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:111:(.text+0x431): undefined reference to `blst_fp_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o): in function `blst_fp2_to_bytes':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:116:(.text+0x461): undefined reference to `blst_lendian_from_fp'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o): in function `blst_fp12_set_to_one':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:129:(.text+0x4f5): undefined reference to `blst_fp_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o): in function `blst_fp12_to_bytes':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:139:(.text+0x5a1): undefined reference to `blst_lendian_from_fp'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:140:(.text+0x5ae): undefined reference to `blst_lendian_from_fp'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:141:(.text+0x5bb): undefined reference to `blst_lendian_from_fp'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:142:(.text+0x5ce): undefined reference to `blst_lendian_from_fp'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:143:(.text+0x5e1): undefined reference to `blst_lendian_from_fp'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o):/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:144: more undefined references to `blst_lendian_from_fp' follow
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o): in function `blst_fp12_of_bytes':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:155:(.text+0x681): undefined reference to `blst_fp_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:156:(.text+0x68e): undefined reference to `blst_fp_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:157:(.text+0x69b): undefined reference to `blst_fp_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:158:(.text+0x6ae): undefined reference to `blst_fp_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:159:(.text+0x6c1): undefined reference to `blst_fp_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o):/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:160: more undefined references to `blst_fp_from_lendian' follow
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o): in function `blst_fp12_pow':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:201:(.text+0x874): undefined reference to `blst_fp12_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:203:(.text+0x899): undefined reference to `blst_fp12_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o): in function `blst_p2_set_coordinates':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:224:(.text+0x9ae): undefined reference to `blst_lendian_from_fp'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:225:(.text+0x9c0): undefined reference to `blst_lendian_from_fp'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:226:(.text+0x9cb): undefined reference to `blst_fp_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:227:(.text+0x9d7): undefined reference to `blst_fp_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:229:(.text+0x9e2): undefined reference to `blst_lendian_from_fp'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:230:(.text+0x9ee): undefined reference to `blst_lendian_from_fp'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:231:(.text+0x9fa): undefined reference to `blst_fp_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:232:(.text+0xa09): undefined reference to `blst_fp_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o): in function `blst_fp2_of_bytes_components':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:112:(.text+0x443): undefined reference to `blst_fp_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o): in function `blst_fp2_to_bytes':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:117:(.text+0x474): undefined reference to `blst_lendian_from_fp'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o): in function `blst_fp12_to_bytes':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:150:(.text+0x66c): undefined reference to `blst_lendian_from_fp'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_wrapper.o): in function `blst_fp12_of_bytes':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_wrapper.c:166:(.text+0x74c): undefined reference to `blst_fp_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fr_is_equal_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:100:(.text+0x5ba): undefined reference to `blst_fr_is_equal'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fr_is_zero_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:106:(.text+0x670): undefined reference to `blst_fr_is_zero'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fr_is_one_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:112:(.text+0x720): undefined reference to `blst_fr_is_one'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fr_add_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:148:(.text+0x9e9): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fr_mul_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:154:(.text+0xae9): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fr_cneg_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:160:(.text+0xbef): undefined reference to `blst_fr_cneg'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fr_sqr_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:166:(.text+0xcca): undefined reference to `blst_fr_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fr_eucl_inverse_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:172:(.text+0xdaa): undefined reference to `blst_fr_eucl_inverse'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fr_sub_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:178:(.text+0xea9): undefined reference to `blst_fr_sub'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_scalar_from_fr_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:184:(.text+0xf8a): undefined reference to `blst_scalar_from_fr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fr_from_scalar_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:190:(.text+0x106a): undefined reference to `blst_fr_from_scalar'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_scalar_to_bytes_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:196:(.text+0x1146): undefined reference to `blst_lendian_from_scalar'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_scalar_of_bytes_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:202:(.text+0x1216): undefined reference to `blst_scalar_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_check_scalar_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:208:(.text+0x12c0): undefined reference to `blst_scalar_fr_check'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fp_of_bytes_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:238:(.text+0x1576): undefined reference to `blst_fp_from_lendian'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fp_to_bytes_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:244:(.text+0x1646): undefined reference to `blst_lendian_from_fp'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fp_add_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:250:(.text+0x1739): undefined reference to `blst_fp_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fp_mul_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:256:(.text+0x1839): undefined reference to `blst_fp_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fp_sqrt_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:262:(.text+0x191a): undefined reference to `blst_fp_sqrt'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fp_cneg_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:268:(.text+0x1a1f): undefined reference to `blst_fp_cneg'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fp2_add_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:292:(.text+0x1c29): undefined reference to `blst_fp2_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fp2_mul_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:298:(.text+0x1d29): undefined reference to `blst_fp2_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fp2_sqrt_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:304:(.text+0x1e0a): undefined reference to `blst_fp2_sqrt'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fp2_cneg_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:310:(.text+0x1f0f): undefined reference to `blst_fp2_cneg'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fp12_mul_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:374:(.text+0x2549): undefined reference to `blst_fp12_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fp12_is_equal_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:380:(.text+0x262a): undefined reference to `blst_fp12_is_equal'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fp12_is_one_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:392:(.text+0x2790): undefined reference to `blst_fp12_is_one'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fp12_inverse_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:398:(.text+0x286a): undefined reference to `blst_fp12_inverse'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fp12_sqr_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:404:(.text+0x294a): undefined reference to `blst_fp12_sqr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fp12_in_group_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:434:(.text+0x2c50): undefined reference to `blst_fp12_in_group'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p1_to_affine_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:473:(.text+0x2f5a): undefined reference to `blst_p1_to_affine'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p1_from_affine_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:479:(.text+0x303a): undefined reference to `blst_p1_from_affine'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p1_double_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:485:(.text+0x311a): undefined reference to `blst_p1_double'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p1_add_or_double_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:492:(.text+0x3219): undefined reference to `blst_p1_add_or_double'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p1_is_inf_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:498:(.text+0x32d0): undefined reference to `blst_p1_is_inf'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p1_in_g1_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:504:(.text+0x3380): undefined reference to `blst_p1_in_g1'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p1_equal_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:510:(.text+0x345a): undefined reference to `blst_p1_is_equal'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p1_cneg_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:516:(.text+0x3541): undefined reference to `blst_p1_cneg'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p1_mult_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:523:(.text+0x3664): undefined reference to `blst_p1_mult'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p1_serialize_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:530:(.text+0x3746): undefined reference to `blst_p1_serialize'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p1_compress_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:536:(.text+0x3816): undefined reference to `blst_p1_compress'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p1_deserialize_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:542:(.text+0x38e6): undefined reference to `blst_p1_deserialize'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p1_uncompress_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:548:(.text+0x39b6): undefined reference to `blst_p1_uncompress'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p1_hash_to_curve_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:558:(.text+0x3b58): undefined reference to `blst_hash_to_g1'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p2_to_affine_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:626:(.text+0x40fa): undefined reference to `blst_p2_to_affine'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p2_from_affine_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:632:(.text+0x41da): undefined reference to `blst_p2_from_affine'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p2_double_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:638:(.text+0x42ba): undefined reference to `blst_p2_double'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p2_add_or_double_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:645:(.text+0x43b9): undefined reference to `blst_p2_add_or_double'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p2_is_inf_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:651:(.text+0x4470): undefined reference to `blst_p2_is_inf'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p2_in_g2_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:657:(.text+0x4520): undefined reference to `blst_p2_in_g2'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p2_equal_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:663:(.text+0x45fa): undefined reference to `blst_p2_is_equal'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p2_cneg_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:669:(.text+0x46e1): undefined reference to `blst_p2_cneg'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p2_mult_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:675:(.text+0x4804): undefined reference to `blst_p2_mult'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p2_serialize_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:682:(.text+0x48e6): undefined reference to `blst_p2_serialize'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p2_compress_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:688:(.text+0x49b6): undefined reference to `blst_p2_compress'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p2_deserialize_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:694:(.text+0x4a86): undefined reference to `blst_p2_deserialize'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p2_uncompress_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:700:(.text+0x4b56): undefined reference to `blst_p2_uncompress'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p2_hash_to_curve_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:710:(.text+0x4cf8): undefined reference to `blst_hash_to_g2'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_miller_loop_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:747:(.text+0x5049): undefined reference to `blst_miller_loop'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_miller_loop_list_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:765:(.text+0x51a6): undefined reference to `blst_p1_to_affine'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:766:(.text+0x51c5): undefined reference to `blst_p2_to_affine'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:767:(.text+0x51d3): undefined reference to `blst_miller_loop'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:768:(.text+0x51e1): undefined reference to `blst_fp12_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_final_exponentiation_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:775:(.text+0x52da): undefined reference to `blst_final_exp'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_g1_pippenger_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:817:(.text+0x54d3): undefined reference to `blst_p1_to_affine'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:818:(.text+0x54ee): undefined reference to `blst_scalar_from_fr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:819:(.text+0x54f9): undefined reference to `blst_lendian_from_scalar'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:823:(.text+0x5523): undefined reference to `blst_p1s_mult_pippenger_scratch_sizeof'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:832:(.text+0x5565): undefined reference to `blst_p1s_mult_pippenger'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_g2_pippenger_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:883:(.text+0x5813): undefined reference to `blst_p2_to_affine'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:884:(.text+0x582f): undefined reference to `blst_scalar_from_fr'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:885:(.text+0x583b): undefined reference to `blst_lendian_from_scalar'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:890:(.text+0x5864): undefined reference to `blst_p2s_mult_pippenger_scratch_sizeof'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:899:(.text+0x58a2): undefined reference to `blst_p2s_mult_pippenger'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_fr_inner_product_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:923:(.text+0x5aae): undefined reference to `blst_fr_mul'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:925:(.text+0x5abc): undefined reference to `blst_fr_add'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p1_affine_array_set_p1_points_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:953:(.text+0x5ce3): undefined reference to `blst_p1_to_affine'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p1_affine_array_get_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:967:(.text+0x5df3): undefined reference to `blst_p1_from_affine'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_g1_pippenger_contiguous_affine_array_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:988:(.text+0x5f9c): undefined reference to `blst_p1s_mult_pippenger_scratch_sizeof'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:994:(.text+0x5fd2): undefined reference to `blst_p1s_mult_pippenger_cont'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p2_affine_array_set_p2_points_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:1026:(.text+0x6216): undefined reference to `blst_p2_to_affine'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_p2_affine_array_get_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:1040:(.text+0x6323): undefined reference to `blst_p2_from_affine'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/lib/bls12-381/libbls12_381_stubs.a(blst_bindings_stubs.o): in function `caml_blst_g2_pippenger_contiguous_affine_array_stubs':
+/home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:1061:(.text+0x64cc): undefined reference to `blst_p2s_mult_pippenger_scratch_sizeof'
+/usr/bin/ld: /home/palmer/functori/ledger/ledger-app-tezos-wallet/_opam/.opam-switch/build/bls12-381.22.0/_build/default/src/lib_bls12_381/blst_bindings_stubs.c:1067:(.text+0x6502): undefined reference to `blst_p2s_mult_pippenger_cont'
+collect2: error: ld returned 1 exit status
+File "caml_startup", line 1:
+Error: Error during linking (exit code 1)
+
+
+  ∗ install bls12-381                        22.0     [required by octez-l2-libs, tezos-protocol-022-PsRiotum]
+⬇ retrieved bls12-381.22.0  (cached)
+∗ installed bls12-381.22.0
+
+#5 237.1   - install bls12-381                        22.0     [required by octez-l2-libs, tezos-protocol-022-PsRiotum]
+#5 261.1 -> retrieved bls12-381.22.0  (https://gitlab.com/tezos/tezos/-/archive/octez-v22.0/octez-source-22.0.tar.gz)
+
+#5 618.9 -> installed bls12-381.22.0
+
+#5 491.9 [ERROR] The compilation of octez-rustzcash-deps.22.0 failed at "dune build -p octez-rustzcash-deps -j 255".
+#5 515.1 [ERROR] The compilation of octez-rust-deps.22.0 failed at "dune build -p octez-rust-deps -j 255".
+
+#5 452.9 [ERROR] The compilation of octez-rustzcash-deps.22.0 failed at "dune build -p octez-rustzcash-deps -j 255".
+#5 454.1 [ERROR] The compilation of octez-rust-deps.22.0 failed at "dune build -p octez-rust-deps -j 255".
+
+
+
+#5 881.1 #=== ERROR while compiling octez-rustzcash-deps.22.0 ==========================#
+#5 881.1 # context              2.1.6 | linux/x86_64 | ocaml-base-compiler.5.2.1 | git+https://github.com/tezos/opam-repository.git#octez-22.0
+#5 881.1 # path                 ~/.opam/5.2/.opam-switch/build/octez-rustzcash-deps.22.0
+#5 881.1 # command              ~/.opam/5.2/bin/dune build -p octez-rustzcash-deps -j 255
+#5 881.1 # exit-code            1
+#5 881.1 # env-file             ~/.opam/log/octez-rustzcash-deps-338-e11939.env
+#5 881.1 # output-file          ~/.opam/log/octez-rustzcash-deps-338-e11939.out
+#5 881.1 ### output ###
+#5 881.1 # File "src/rustzcash_deps/dune", lines 12-23, characters 0-292:
+#5 881.1 # 12 | (rule
+#5 881.1 # 13 |  (targets liboctez_rustzcash_deps.a dlloctez_rustzcash_deps.so)
+#5 881.1 # 14 |  (deps
+#5 881.1 # ....
+#5 881.1 # 21 |   (source_tree include)
+#5 881.1 # 22 |   (source_tree src))
+#5 881.1 # 23 |  (action (no-infer (bash ./build.sh))))
+#5 881.1 # (cd _build/default/src/rustzcash_deps && /bin/bash -e -u -o pipefail -c ./build.sh)
+#5 881.1 # info: syncing channel updates for '1.77.2-x86_64-unknown-linux-musl'
+#5 881.1 # info: latest update on 2024-04-09, rust version 1.77.2 (25ef9e3d8 2024-04-09)
+#5 881.1 # info: downloading component 'cargo'
+#5 881.1 # error: component download failed for cargo-x86_64-unknown-linux-musl: could not rename downloaded file from '/home/opam/.rustup/downloads/6c4e00007af2b5fc3dac45024ee50136cc0c5966b6c631745a58316e7d121b48.partial' to '/home/opam/.rustup/downloads/6c4e00007af2b5fc3dac45024ee50136cc0c5966b6c631745a58316e7d121b48': No such file or directory (os error 2)
+#5 881.1 
+#5 881.1 
+
+
+#5 881.1 #=== ERROR while compiling octez-rust-deps.22.0 ===============================#
+#5 881.1 # context              2.1.6 | linux/x86_64 | ocaml-base-compiler.5.2.1 | git+https://github.com/tezos/opam-repository.git#octez-22.0
+#5 881.1 # path                 ~/.opam/5.2/.opam-switch/build/octez-rust-deps.22.0
+#5 881.1 # command              ~/.opam/5.2/bin/dune build -p octez-rust-deps -j 255
+#5 881.1 # exit-code            1
+#5 881.1 # env-file             ~/.opam/log/octez-rust-deps-338-6a9b2c.env
+#5 881.1 # output-file          ~/.opam/log/octez-rust-deps-338-6a9b2c.out
+#5 881.1 ### output ###
+#5 881.1 # File "src/rust_deps/dune", lines 12-26, characters 0-403:
+#5 881.1 # 12 | (rule
+#5 881.1 # 13 |  (targets liboctez_rust_deps.a dlloctez_rust_deps.so wasmer.h wasm.h)
+#5 881.1 # 14 |  (deps
+#5 881.1 # ....
+#5 881.1 # 24 |   (source_tree ../kernel_sdk)
+#5 881.1 # 25 |   (source_tree ../../sdk/rust))
+#5 881.1 # 26 |  (action (no-infer (bash ./build.sh))))
+#5 881.1 # (cd _build/default/src/rust_deps && /bin/bash -e -u -o pipefail -c ./build.sh)
+#5 881.1 # info: syncing channel updates for '1.77.2-x86_64-unknown-linux-musl'
+#5 881.1 # info: latest update on 2024-04-09, rust version 1.77.2 (25ef9e3d8 2024-04-09)
+#5 881.1 # info: downloading component 'cargo'
+#5 881.1 # info: downloading component 'rust-std'
+#5 881.1 # info: downloading component 'rustc'
+#5 881.1 # info: installing component 'cargo'
+#5 881.1 # info: installing component 'rust-std'
+#5 881.1 # info: installing component 'rustc'
+#5 881.1 # error: output of --print=file-names missing when learning about target-specific information from rustc
+#5 881.1 # command was: `/home/opam/.rustup/toolchains/1.77.2-x86_64-unknown-linux-musl/bin/rustc - --crate-name ___ --print=file-names -Awarnings --crate-type bin --crate-type rlib --crate-type dylib --crate-type cdylib --crate-type staticlib --crate-type proc-macro --print=sysroot --print=split-debuginfo --print=crate-name --print=cfg`
+#5 881.1 # 
+#5 881.1 # --- stdout
+#5 881.1 # ___
+#5 881.1 # lib___.rlib
+#5 881.1 # lib___.a
+#5 881.1 # lib___.so
+#5 881.1 # /home/opam/.rustup/toolchains/1.77.2-x86_64-unknown-linux-musl
+#5 881.1 # off
+#5 881.1 # packed
+#5 881.1 # unpacked
+#5 881.1 # ___
+#5 881.1 # debug_assertions
+#5 881.1 # panic="unwind"
+#5 881.1 # proc_macro
+#5 881.1 # target_arch="x86_64"
+#5 881.1 # target_endian="little"
+#5 881.1 # target_env="musl"
+#5 881.1 # target_family="unix"
+#5 881.1 # target_feature="fxsr"
+#5 881.1 # target_feature="sse"
+#5 881.1 # target_feature="sse2"
+#5 881.1 # target_has_atomic="16"
+#5 881.1 # target_has_atomic="32"
+#5 881.1 # target_has_atomic="64"
+#5 881.1 # target_has_atomic="8"
+#5 881.1 # target_has_atomic="ptr"
+#5 881.1 # target_os="linux"
+#5 881.1 # target_pointer_width="64"
+#5 881.1 # target_vendor="unknown"
+#5 881.1 # unix
