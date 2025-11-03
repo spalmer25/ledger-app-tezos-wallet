@@ -144,7 +144,7 @@ let sign ppf ~signer:Apdu.Signer.({ sk; pk; _ } as signer) ~watermark bin =
   in
   send_async_apdus ppf async_apdus
 
-open Tezos_protocol_023_PtSeouLo
+open Tezos_protocol_024_PsD5wVTJ
 open Tezos_micheline
 
 let rec pp_node ~wrap ppf (node : Protocol.Script_repr.node) =

@@ -3,8 +3,8 @@
  (libraries
   octez-rust-deps
   bls12-381.archive
-  tezos-protocol-023-PtSeouLo.protocol
-  tezos-benchmarks-proto-023-PtSeouLo
+  tezos-protocol-024-PsD5wVTJ.protocol
+  tezos-benchmarks-proto-024-PsD5wVTJ
   ; Only for `Tezos_client_base.Bip39`
   octez-shell-libs.client-base
   qcheck-core))

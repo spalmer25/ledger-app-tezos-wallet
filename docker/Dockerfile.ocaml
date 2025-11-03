@@ -20,6 +20,10 @@ RUN rm -rf _opam/ &&                                        \
     eval $(opam env) && dune build @install &&              \
     eval $(opam env) && dune install                        \
         # required by `octez-libs`
+        octez-rust-tezos-context                            \
+        # required by `octez-libs`
+        octez-lwt-domain                                    \
+        # required by `octez-libs`
         octez-internal-libs                                 \
         # required by `octez-proto-libs`
         octez-libs                                          \
@@ -27,19 +31,19 @@ RUN rm -rf _opam/ &&                                        \
         octez-riscv-api                                     \
         # required by `octez-proto-libs`
         octez-riscv-pvm                                     \
-        # required by `tezos-protocol-023-PtSeouLo`
+        # required by `tezos-protocol-024-PsD5wVTJ`
         octez-proto-libs                                    \
-        # required by `octez-protocol-023-PtSeouLo-libs`
+        # required by `octez-protocol-024-PsD5wVTJ-libs`
         tezt-tezos                                          \
-        # required by `tezos-benchmarks-proto-023-PtSeouLo`
-        octez-protocol-023-PtSeouLo-libs                    \
-        # required by `tezos-benchmarks-proto-023-PtSeouLo`
-        tezos-benchmark-type-inference-023-PtSeouLo         \
-        # required by `tezos-benchmark-023-PtSeouLo`
+        # required by `tezos-benchmarks-proto-024-PsD5wVTJ`
+        octez-protocol-024-PsD5wVTJ-libs                    \
+        # required by `tezos-benchmarks-proto-024-PsD5wVTJ`
+        tezos-benchmark-type-inference-024-PsD5wVTJ         \
+        # required by `tezos-benchmark-024-PsD5wVTJ`
         tezos-micheline-rewriting                           \
-        # required by `tezos-benchmarks-proto-023-PtSeouLo`
-        tezos-benchmark-023-PtSeouLo                        \
-        # required by `tezos-benchmarks-proto-023-PtSeouLo`
+        # required by `tezos-benchmarks-proto-024-PsD5wVTJ`
+        tezos-benchmark-024-PsD5wVTJ                        \
+        # required by `tezos-benchmarks-proto-024-PsD5wVTJ`
         tezos-benchmark                                     \
         # required by `octez-shell-libs`
         octez-version                                       \
@@ -49,8 +53,8 @@ RUN rm -rf _opam/ &&                                        \
         octez-protocol-compiler                             \
         octez-rust-deps                                     \
         bls12-381                                           \
-        tezos-protocol-023-PtSeouLo                         \
-        tezos-benchmarks-proto-023-PtSeouLo                 \
+        tezos-protocol-024-PsD5wVTJ                         \
+        tezos-benchmarks-proto-024-PsD5wVTJ                 \
         octez-shell-libs &&                                 \
     opam install terminal_size &&                           \
     make clean &&                                           \
